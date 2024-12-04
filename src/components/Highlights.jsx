@@ -63,12 +63,12 @@ export default function Highlights() {
         <GradientText
           animationSpeed={10}
           showBorder={false}
-          className="text-6xl py-4"
+          className="text-6xl mt-8 "
         >
-          Key Highlights
+          KEY HIGHLIGHTS
         </GradientText>
       </div>
-      <main ref={container}>
+      <main ref={container} className="">
         {sections.map((section, i) => {
           const targetScale = 1 - (sections.length - i) * 0.05;
           return (

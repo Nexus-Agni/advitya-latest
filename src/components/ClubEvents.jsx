@@ -1,10 +1,6 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
 import GradientText from "./ui/GradientText";
-import Tech from "../assets/tech.png";
-import NonTech from "../assets/non-tech.png";
-import ProShow from "../assets/pro-show.png";
 
 export function ClubEvents() {
   const navigate = useNavigate();
@@ -12,18 +8,18 @@ export function ClubEvents() {
   const cards = [
     {
       title: "Technical Events",
-      src: Tech,
+      src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1733300780/Tech.jpg",
       link: "/technical-events",
     },
     {
       title: "Non-Technical Events",
-      src: NonTech,
+      src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1733300780/Non-Tech.jpg",
       link: "/non-technical-events",
     },
     {
       title: "Pro Night",
-      src: ProShow,
-      // link: "/pro-night",
+      src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1733300780/Pro-Show.jpg",
+      link: "/pro-night",
     },
   ];
 
@@ -32,7 +28,7 @@ export function ClubEvents() {
       <div className="bg-zinc-950 h-full w-full">
         <div className="flex items-center justify-start p-4 ">
           <button
-            onClick={() => navigate('/', { state: { from: "ClubEvents" } })}
+            onClick={() => navigate("/", { state: { from: "ClubEvents" } })}
             className="text-white bg-purple-600 py-2 px-4 rounded-lg hover:scale-105 ease-in-out duration-300 flex items-center"
           >
             <svg
@@ -61,7 +57,7 @@ export function ClubEvents() {
             Our Events
           </GradientText>
         </div>
-        
+
         <div className="flex flex-wrap justify-center items-center gap-5 max-w-full mx-auto md:px-8 w-full ">
           {cards.map((card, index) => (
             <CardContainer key={index} className="inter-var">

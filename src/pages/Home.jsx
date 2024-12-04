@@ -7,12 +7,8 @@ import { Navbar } from "../components/Navbar";
 import Highlights from "../components/Highlights";
 import Preloader from "../components/ui/apple-preloader";
 import Footer from "../components/Footer";
-import ScrollBasedVelocityDemo from "../components/Demo-of-scroll-based-velocity";
 import ContactUsSection from "../components/ContactUsSection";
-import Prize from "../components/prize";
 import { Video } from "../components/Video";
-import { AppleCardsCarouselDemo } from "../components/AppleCardsCarousel";
-import { GradualSpacingDemo } from "../components/GradualSpacingDemo";
 
 function Home() {
   const [loading, setLoading] = useState(true);
@@ -42,16 +38,11 @@ function Home() {
         <Navbar />
         <Hero />
         <AdvityaDescription classname="bg-black" />
-        <Prize />
         <br />
         <Video />
         <br />
-        <AppleCardsCarouselDemo />
-        {/* <ScrollBasedVelocityDemo /> */}
-        <Leadership />
-        <GradualSpacingDemo />
         <Highlights />
-        {/* <ClubEvents /> */}
+        <Leadership />
         <ContactUsSection id="contact" />
         <Footer />
       </div>

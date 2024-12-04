@@ -1,17 +1,23 @@
 import GradientText from "./ui/GradientText";
 import { FlipWords } from "./ui/flip-words";
-import bannerImage from "../../public/images/banner.jpg";
 
 const Hero = () => {
   const words1 = ["Creativity", "Innovation", "Talent", "Learning", "Energy"];
-  const words2 = ["Celebration", "Tradition", "Opportunity", "Fun", "Excellence"];
+  const words2 = [
+    "Celebration",
+    "Tradition",
+    "Opportunity",
+    "Fun",
+    "Excellence",
+  ];
 
   return (
     <section
       className="relative min-h-[calc(100vh-50px)] overflow-hidden py-16 md:py-[10rem]"
-      style={{ backgroundImage: `url(${bannerImage})` }}
+      style={{
+        backgroundImage: `url(https://res.cloudinary.com/dkjhkep0m/image/upload/v1733296923/Banner.jpg)`,
+      }}
     >
-      <div className="absolute left-1/2 top-[calc(100%-90px)] lg:top-[calc(100%-50px)] h-[500px] w-[700px] md:h-[500px] md:w-[1100px] lg:h-[300px] lg:w-[100%] -translate-x-1/2 rounded-[100%] border-[#B48CDE] bg-black bg-[radial-gradient(closest-side,#000_82%,#9560EB)]"></div>
       <div className="dark:border-dark-border absolute left-0 top-0 z-0 grid h-full w-full grid-cols-[clamp(28px,10vw,120px)_auto_clamp(28px,10vw,120px)] border-b border-border">
         <div className="col-span-1 flex h-full items-center justify-center" />
         <div className="dark:border-dark-border col-span-1 flex h-full items-center justify-center border-x border-white/10" />
@@ -29,10 +35,25 @@ const Hero = () => {
         <div>
           <div className="mx-auto flex h-auto max-w-[90vw] shrink-0 flex-col items-center justify-center gap-2 px-2 py-4 sm:px-10 lg:px-24">
             <h1 className="text-text-primary dark:text-dark-text-primary text-pretty text-center text-5xl  md:text-6xl lg:text-[clamp(50px,7vw,75px)] font-medium leading-none tracking-[-1.44px] md:max-w-screen-lg md:tracking-[-2.16px] text-white">
-              Join us at <GradientText animationSpeed={3} showBorder={false} display="inline" className="font-bold">AdVITya'25</GradientText>
+              Join us at{" "}
+              <GradientText
+                animationSpeed={3}
+                showBorder={false}
+                display="inline"
+                className="font-bold"
+              >
+                AdVITya&pos;25
+              </GradientText>
             </h1>
             <h1 className="text-text-primary dark:text-dark-text-primary text-pretty text-center text-3xl sm:text-4xl md:text-5xl font-medium leading-none tracking-[-1.44px] md:max-w-screen-lg md:tracking-[-2.16px] text-white">
-              where <span className="text-purple-600 font-bold"><FlipWords words={words1} /></span> meets <span className="text-purple-600 font-bold"><FlipWords words={words2} /></span>
+              where{" "}
+              <span className="text-purple-600 font-bold">
+                <FlipWords words={words1} />
+              </span>{" "}
+              meets{" "}
+              <span className="text-purple-600 font-bold">
+                <FlipWords words={words2} />
+              </span>
             </h1>
             <h2 className="text-md text-text-tertiary dark:text-dark-text-tertiary max-w-2xl text-pretty text-center md:text-lg text-white">
               and unforgettable moments are made.

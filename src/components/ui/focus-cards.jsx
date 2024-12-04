@@ -10,7 +10,8 @@ export const Card = React.memo(
       onClick={() => setActive(card)}
       className={cn(
         "rounded-lg relative bg-gray-100 dark:bg-neutral-900 overflow-hidden h-60 md:h-[23rem] w-full transition-all duration-300 ease-out cursor-pointer",
-        hovered !== null && hovered !== index && "blur-sm scale-[0.98]"
+        hovered !== null && hovered !== index && "blur-sm scale-[0.98]",
+        hovered === index && "border-4 border-purple-500"
       )}
     >
       <img
