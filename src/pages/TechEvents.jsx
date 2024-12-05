@@ -5,6 +5,7 @@ import { useOutsideClick } from "../hooks/useOutsideClick";
 import GradientText from "../components/ui/GradientText";
 import { technicalEvents } from "../components/Events";
 import { FocusCards } from "../components/ui/focus-cards";
+import { MapPin, Calendar, DollarSign } from "lucide-react";
 
 export function TechEvents() {
   const [active, setActive] = useState(null);
@@ -133,8 +134,11 @@ export function TechEvents() {
                         exit={{ opacity: 0 }}
                         className="text-neutral-600 dark:text-neutral-400 text-sm"
                       >
-                        Venue: {active.venue} | Date: {active.date} | Entry
-                        Fees: {active.entryFees}
+                        <div className="flex">
+                        <MapPin className="w-4 h-4" /> {active.venue} |{" "}
+                        <Calendar className="w-4 h-4" /> {active.date} |{" "}
+                        <DollarSign className="w-4 h-4" /> {active.entryFees}
+                        </div>
                       </motion.p>
                     </div>
 

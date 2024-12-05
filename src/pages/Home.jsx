@@ -4,11 +4,12 @@ import Hero from "../components/Hero";
 import { Leadership } from "../components/Leadership";
 import { AdvityaDescription } from "../components/AdVITyaDescription";
 import { Navbar } from "../components/Navbar";
-import Highlights from "../components/Highlights";
+// import Highlights from "../components/Highlights";
 import Preloader from "../components/ui/apple-preloader";
 import Footer from "../components/Footer";
 import ContactUsSection from "../components/ContactUsSection";
 import { Video } from "../components/Video";
+import { KeyHighlights } from "../components/KeyHighLights";
 
 function Home() {
   const [loading, setLoading] = useState(true);
@@ -41,7 +42,8 @@ function Home() {
         <br />
         <Video />
         <br />
-        <Highlights />
+        {/* <Highlights /> */}
+        <KeyHighlights />
         <Leadership />
         <ContactUsSection id="contact" />
         <Footer />
@@ -50,4 +52,4 @@ function Home() {
   );
 }
 
-export default Home;  
+export default Home;

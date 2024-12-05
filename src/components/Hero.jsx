@@ -15,7 +15,9 @@ const Hero = () => {
     <section
       className="relative min-h-[calc(100vh-50px)] overflow-hidden py-16 md:py-[10rem]"
       style={{
-        backgroundImage: `url(https://res.cloudinary.com/dkjhkep0m/image/upload/v1733296923/Banner.jpg)`,
+        backgroundImage: `url(https://res.cloudinary.com/dkjhkep0m/image/upload/v1733372098/BG1.jpg)`,
+        backgroundPosition: "center",
+        backgroundSize: "cover",
       }}
     >
       <div className="dark:border-dark-border absolute left-0 top-0 z-0 grid h-full w-full grid-cols-[clamp(28px,10vw,120px)_auto_clamp(28px,10vw,120px)] border-b border-border">
@@ -37,12 +39,14 @@ const Hero = () => {
             <h1 className="text-text-primary dark:text-dark-text-primary text-pretty text-center text-5xl  md:text-6xl lg:text-[clamp(50px,7vw,75px)] font-medium leading-none tracking-[-1.44px] md:max-w-screen-lg md:tracking-[-2.16px] text-white">
               Join us at{" "}
               <GradientText
-                animationSpeed={3}
+                animationSpeed={4}
                 showBorder={false}
                 display="inline"
                 className="font-bold"
+                //TODO change colors here
+                // colors={["#00BFFF", "#7FFF00", "#FFD700"]}
               >
-                AdVITya&pos;25
+                AdVITya&apos;25
               </GradientText>
             </h1>
             <h1 className="text-text-primary dark:text-dark-text-primary text-pretty text-center text-3xl sm:text-4xl md:text-5xl font-medium leading-none tracking-[-1.44px] md:max-w-screen-lg md:tracking-[-2.16px] text-white">
