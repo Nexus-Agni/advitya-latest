@@ -1,7 +1,6 @@
 import React, { useState } from 'react';
 import { cn } from "../utils/cn";
 import { Menu } from "./ui/navbar-menu";
-import logo from "../assets/vitLogo.png";
 import { Link } from 'react-router-dom';
 
 export function Navbar() {
@@ -18,7 +17,7 @@ function Navbar1({ className }) {
     <div className={cn(`fixed top-10 inset-x-0 max-w-2xl mx-auto z-50 `, className)}>
       <Menu setActive={setActive} className="bg-white">
         <a href="https://vitbhopal.ac.in" target='_blank'>
-          <img src={logo} alt="Logo" className='h-10 w-full' />
+          <img src="https://res.cloudinary.com/dkjhkep0m/image/upload/v1733299178/VIT%20Logo.png" alt="Logo" className='h-10 w-full' />
         </a>
         <div className='hidden lg:flex space-x-6 my-auto lg:justify-center lg:items-center '>
           <a href="#contact" className='text-white hover:text-purple-400 transition ease-in-out duration-300 '>Contact Us</a>

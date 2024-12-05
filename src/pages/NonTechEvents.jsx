@@ -1,6 +1,6 @@
 import { useEffect, useId, useRef, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 import { useOutsideClick } from "../hooks/useOutsideClick";
 import GradientText from "../components/ui/GradientText";
 import { nonTechnicalEvents } from "../components/Events";
@@ -36,7 +36,9 @@ export function NonTechEvents() {
       <div className="bg-grid-white/[0.2] h-full w-full">
         <div className="flex items-center justify-start p-4 ">
           <button
-            onClick={() => navigate('/events', { state: { from: "NonTechEvents" } })}
+            onClick={() =>
+              navigate("/events", { state: { from: "NonTechEvents" } })
+            }
             className="text-white bg-purple-600 py-2 px-4 rounded-lg hover:scale-105 ease-in-out duration-300 flex items-center"
           >
             <svg
@@ -97,7 +99,7 @@ export function NonTechEvents() {
               <motion.div
                 layoutId={`card-${active.title}-${id}`}
                 ref={ref}
-                className="w-full max-w-[600px] h-full md:h-fit md:max-h-[90%] flex flex-col bg-white dark:bg-neutral-900 sm:rounded-3xl overflow-hidden"
+                className="w-full max-w-[600px] h-full md:h-fit md:max-h-[90%] flex flex-col bg-white dark:bg-neutral-900 sm:rounded-3xl overflow-scroll overflow-x-hidden"
               >
                 <motion.div layoutId={`image-${active.title}-${id}`}>
                   <img
@@ -124,6 +126,16 @@ export function NonTechEvents() {
                       >
                         {active.clubName}
                       </motion.p>
+                      <motion.p
+                        layout
+                        initial={{ opacity: 0 }}
+                        animate={{ opacity: 1 }}
+                        exit={{ opacity: 0 }}
+                        className="text-neutral-600 dark:text-neutral-400 text-sm"
+                      >
+                        Venue: {active.venue} | Date: {active.date} | Entry
+                        Fees: {active.entryFees}
+                      </motion.p>
                     </div>
 
                     <motion.a
@@ -133,7 +145,8 @@ export function NonTechEvents() {
                       exit={{ opacity: 0 }}
                       href={active.ctaLink}
                       target="_blank"
-                      className="px-4 py-3 text-sm rounded-full font-bold bg-green-500 text-white"
+                      className="px-4 py-3 text-sm rounded-full font-bold bg-purple-500
+                      hover:bg-purple-800 ease-in-out duration-300 text-white"
                     >
                       {active.ctaText}
                     </motion.a>
