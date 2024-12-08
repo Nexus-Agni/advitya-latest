@@ -35,7 +35,7 @@ export function NonTechEvents() {
   return (
     <>
       <div className="bg-grid-white/[0.2] h-full w-full">
-        <div className="flex items-center justify-start p-4 ">
+        <div className="flex items-center justify-start p-4">
           <button
             onClick={() =>
               navigate("/events", { state: { from: "NonTechEvents" } })
@@ -62,7 +62,7 @@ export function NonTechEvents() {
         <GradientText
           animationSpeed={10}
           showBorder={false}
-          className="text-6xl py-10"
+          className="text-4xl md:text-6xl py-10"
         >
           Non Technical Events
         </GradientText>
@@ -78,7 +78,7 @@ export function NonTechEvents() {
         </AnimatePresence>
         <AnimatePresence>
           {active && typeof active === "object" ? (
-            <div className="fixed inset-0 grid place-items-center z-[100]">
+            <div className="fixed inset-0 grid place-items-center z-[100] p-4 md:p-0">
               <motion.button
                 key={`button-${active.title}-${id}`}
                 layout
@@ -108,12 +108,12 @@ export function NonTechEvents() {
                     height={300}
                     src={active.src}
                     alt={active.title}
-                    className="w-full h-96 lg:h-96 sm:rounded-tr-lg sm:rounded-tl-lg object-cover object-top"
+                    className="w-full h-60 md:h-96 sm:rounded-tr-lg sm:rounded-tl-lg object-cover object-top"
                   />
                 </motion.div>
 
                 <div>
-                  <div className="flex justify-between items-start p-4">
+                  <div className="flex flex-col md:flex-row justify-between items-start p-4">
                     <div className="">
                       <motion.h3
                         layoutId={`title-${active.title}-${id}`}
@@ -134,10 +134,11 @@ export function NonTechEvents() {
                         exit={{ opacity: 0 }}
                         className="text-neutral-600 dark:text-neutral-400 text-sm"
                       >
-                        <div className="flex">
-                          <MapPin className="w-4 h-4" /> {active.venue} |{" "}
-                          <Calendar className="w-4 h-4" /> {active.date} |{" "}
-                          <DollarSign className="w-4 h-4" /> {active.entryFees}
+                        <div className="flex flex-wrap">
+                          <MapPin className="w-4 h-4 mr-1" /> {active.venue} |{" "}
+                          <Calendar className="w-4 h-4 mr-1" /> {active.date} |{" "}
+                          <DollarSign className="w-4 h-4 mr-1" />{" "}
+                          {active.entryFees}
                         </div>
                       </motion.p>
                     </div>
@@ -149,8 +150,7 @@ export function NonTechEvents() {
                       exit={{ opacity: 0 }}
                       href={active.ctaLink}
                       target="_blank"
-                      className="px-4 py-3 text-sm rounded-full font-bold bg-purple-500
-                      hover:bg-purple-800 ease-in-out duration-300 text-white"
+                      className="px-4 py-3 text-sm rounded-full font-bold bg-purple-500 hover:bg-purple-800 ease-in-out duration-300 text-white mt-4 md:mt-0"
                     >
                       {active.ctaText}
                     </motion.a>
@@ -163,9 +163,11 @@ export function NonTechEvents() {
                       exit={{ opacity: 0 }}
                       className="text-neutral-600 text-sm md:text-base lg:text-lg h-40 md:h-fit pb-10 flex flex-col items-start gap-4 overflow-auto dark:text-neutral-400 [mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]"
                     >
-                      {typeof active.eventDescription === "function"
-                        ? active.eventDescription()
-                        : active.eventDescription}
+                      {typeof active.eventDescription === "function" ? (
+                        <div>{active.eventDescription()}</div>
+                      ) : (
+                        active.eventDescription
+                      )}
                     </motion.div>
                   </div>
                 </div>

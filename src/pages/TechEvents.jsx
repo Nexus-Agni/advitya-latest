@@ -62,7 +62,7 @@ export function TechEvents() {
         <GradientText
           animationSpeed={10}
           showBorder={false}
-          className="text-6xl py-10"
+          className="text-4xl md:text-6xl py-10"
         >
           Technical Events
         </GradientText>
@@ -78,7 +78,7 @@ export function TechEvents() {
         </AnimatePresence>
         <AnimatePresence>
           {active && typeof active === "object" ? (
-            <div className="fixed inset-0 grid place-items-center z-[100]">
+            <div className="fixed inset-0 grid place-items-center z-[100] p-4 md:p-0">
               <motion.button
                 key={`button-${active.title}-${id}`}
                 layout
@@ -100,7 +100,7 @@ export function TechEvents() {
               <motion.div
                 layoutId={`card-${active.title}-${id}`}
                 ref={ref}
-                className="w-full max-w-[600px] h-full md:h-fit md:max-h-[90%] flex flex-col bg-white dark:bg-neutral-900 sm:rounded-3xl overflow-scroll overflow-x-hidden"
+                className="w-full max-w-[600px] h-full md:h-fit md:max-h-[90%] flex flex-col bg-white dark:bg-neutral-900 rounded-3xl overflow-scroll overflow-x-hidden"
               >
                 <motion.div layoutId={`image-${active.title}-${id}`}>
                   <img
@@ -108,12 +108,12 @@ export function TechEvents() {
                     height={300}
                     src={active.src}
                     alt={active.title}
-                    className="w-full h-96 lg:h-96 sm:rounded-tr-lg sm:rounded-tl-lg object-cover object-top"
+                    className="w-full h-60 md:h-96 sm:rounded-tr-lg sm:rounded-tl-lg object-cover object-top"
                   />
                 </motion.div>
 
                 <div>
-                  <div className="flex justify-between items-start p-4">
+                  <div className="flex flex-col md:flex-row justify-between items-start p-4">
                     <div className="">
                       <motion.h3
                         layoutId={`title-${active.title}-${id}`}
@@ -134,10 +134,11 @@ export function TechEvents() {
                         exit={{ opacity: 0 }}
                         className="text-neutral-600 dark:text-neutral-400 text-sm"
                       >
-                        <div className="flex">
-                        <MapPin className="w-4 h-4" /> {active.venue} |{" "}
-                        <Calendar className="w-4 h-4" /> {active.date} |{" "}
-                        <DollarSign className="w-4 h-4" /> {active.entryFees}
+                        <div className="flex flex-wrap">
+                          <MapPin className="w-4 h-4 mr-1" /> {active.venue} |{" "}
+                          <Calendar className="w-4 h-4 mr-1" /> {active.date} |{" "}
+                          <DollarSign className="w-4 h-4 mr-1" />{" "}
+                          {active.entryFees}
                         </div>
                       </motion.p>
                     </div>
@@ -149,8 +150,7 @@ export function TechEvents() {
                       exit={{ opacity: 0 }}
                       href={active.ctaLink}
                       target="_blank"
-                      className="px-4 py-3 text-sm rounded-full font-bold bg-purple-500
-                      hover:bg-purple-800 ease-in-out duration-300 text-white"
+                      className="px-4 py-3 text-sm rounded-full font-bold bg-purple-500 hover:bg-purple-800 ease-in-out duration-300 text-white mt-4 md:mt-0"
                     >
                       {active.ctaText}
                     </motion.a>
