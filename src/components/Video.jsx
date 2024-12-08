@@ -1,4 +1,5 @@
 import React, { useEffect, useRef } from "react";
+import { toast } from "react-toastify";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/swiper-bundle.css";
 
@@ -33,7 +34,7 @@ export const Video = () => {
     navigator.clipboard.writeText(
       "https://www.youtube.com/embed/DZ_22bwEw0U?start=3"
     );
-    alert("Video link copied to clipboard!");
+    toast.success("Video link copied to clipboard!");
   };
 
   return (
@@ -45,7 +46,7 @@ export const Video = () => {
           WebkitBackgroundClip: "text",
           WebkitTextFillColor: "transparent",
         }}
-        className="max-w-7xl pl-4 mx-auto text-2xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans"
+        className="max-w-7xl pl-4 mx-auto text-2xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans hidden md:block"
       >
         Advitya&apos;24 Highlights.
       </h2>

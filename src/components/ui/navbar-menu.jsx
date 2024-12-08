@@ -1,18 +1,12 @@
 "use client";
 import React, { useEffect, useState } from "react";
 
-
 export const Menu = ({ setActive, children }) => {
-  const [isScrolled, setIsScrolled] = useState(false);
   const [navbarWidth, setNavbarWidth] = useState("w-full");
 
   useEffect(() => {
     const handleScroll = () => {
       const scrollY = window.scrollY;
-      const show = scrollY > 50;
-      setIsScrolled(show);
-
-      // Calculate the width based on scroll position
       const newWidth = Math.max(768, 1280 - scrollY * 2); // Adjust the values as needed
       setNavbarWidth(`max-w-${newWidth}px`);
     };
@@ -26,10 +20,7 @@ export const Menu = ({ setActive, children }) => {
   return (
     <div
       onMouseLeave={() => setActive(null)}
-      className={`relative rounded-full border  bg-black border-white/[0.2] shadow-input flex justify-between space-x-4 px-8 py-6 
-        ${isScrolled ? "bg-opacity-40 backdrop-blur-md shadow-sm transition-all ease-in-out" : ""}
-        ${navbarWidth}
-      `}
+      className={`relative rounded-full border bg-black bg-opacity-40 backdrop-blur-md border-white/[0.2] shadow-input flex justify-between space-x-4 px-8 py-6 transition-all ease-in-out ${navbarWidth}`}
     >
       {children}
     </div>

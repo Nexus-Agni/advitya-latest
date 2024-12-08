@@ -40,7 +40,7 @@ function Home() {
         <Hero />
         <AdvityaDescription classname="bg-black" />
         <br />
-        <Video />
+        <Video className="hidden md:block"/>
         <br />
         {/* <Highlights /> */}
         <KeyHighlights />

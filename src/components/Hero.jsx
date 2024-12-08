@@ -15,7 +15,7 @@ const Hero = () => {
     <section
       className="relative min-h-[calc(100vh-50px)] overflow-hidden py-16 md:py-[10rem]"
       style={{
-        backgroundImage: `url(https://res.cloudinary.com/dkjhkep0m/image/upload/v1733372098/BG1.jpg)`,
+        backgroundImage: `url(https://res.cloudinary.com/dkjhkep0m/image/upload/v1733569739/BG1.png)`,
         backgroundPosition: "center",
         backgroundSize: "cover",
       }}
@@ -36,7 +36,7 @@ const Hero = () => {
         </div>
         <div>
           <div className="mx-auto flex h-auto max-w-[90vw] shrink-0 flex-col items-center justify-center gap-2 px-2 py-4 sm:px-10 lg:px-24">
-            <h1 className="text-text-primary dark:text-dark-text-primary text-pretty text-center text-5xl  md:text-6xl lg:text-[clamp(50px,7vw,75px)] font-medium leading-none tracking-[-1.44px] md:max-w-screen-lg md:tracking-[-2.16px] text-white">
+            <h1 className="text-text-primary dark:text-dark-text-primary text-pretty text-center text-5xl  md:text-6xl lg:text-[clamp(50px,7vw,75px)] font-medium leading-none tracking-[-1.44px] md:max-w-screen-lg md:tracking-[-2.16px] text-gray-200">
               Join us at{" "}
               <GradientText
                 animationSpeed={4}
@@ -44,18 +44,18 @@ const Hero = () => {
                 display="inline"
                 className="font-bold"
                 //TODO change colors here
-                // colors={["#00BFFF", "#7FFF00", "#FFD700"]}
+                colors={["#00BFFF", "#7FFF00", "#FFD700"]}
               >
                 AdVITya&apos;25
               </GradientText>
             </h1>
             <h1 className="text-text-primary dark:text-dark-text-primary text-pretty text-center text-3xl sm:text-4xl md:text-5xl font-medium leading-none tracking-[-1.44px] md:max-w-screen-lg md:tracking-[-2.16px] text-white">
               where{" "}
-              <span className="text-purple-600 font-bold">
+              <span className="text-[#7FFF00] font-bold">
                 <FlipWords words={words1} />
               </span>{" "}
               meets{" "}
-              <span className="text-purple-600 font-bold">
+              <span className="text-[#FFD700] font-bold">
                 <FlipWords words={words2} />
               </span>
             </h1>

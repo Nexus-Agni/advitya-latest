@@ -58,13 +58,18 @@ export const HeroParallax = ({
 export const Header = () => {
   return (
     (<div
-      className="max-w-7xl relative mx-auto py-20 md:py-40 px-4 w-full  left-0 top-0">
+      className="max-w-7xl h-full relative mx-auto py-20 md:py-40 px-4 w-full flex flex-col md:flex-row  left-0 top-0">
+      <div className="w-full">
       <h1 className="text-2xl md:text-7xl font-bold dark:text-white">
       <span className="text-4xl md:text-8xl text-[#B48CDE]">AdVITya'25</span>Unleashing Brilliance,Igniting Minds! 
       </h1>
       <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
       Dive into the heart of VIT Bhopal with AdVlTya'25 - an electrifying blend of technology and culture. Crafted by the ingenious minds of VIT Bhopal students, AdVlTya'25 transcends the ordinary, presenting a dynamic showcase of innovation and creativity. Join us for an immersive experience where every moment sparks brilliance, turning the campus into a canvas of unbridled talent and celebration. AdVlTya'25 is more than an event; it's a journey where the extraordinary takes center stage, inviting you to witness and be part of the magic!
       </p>
+      </div>
+      <div className="w-full">
+        <img src="https://res.cloudinary.com/dkjhkep0m/image/upload/v1733631098/lion_amj8sn.svg" alt="Lion SVG" className="w-full h-full" />
+      </div>
     </div>)
   );
 };
