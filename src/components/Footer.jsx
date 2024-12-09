@@ -1,6 +1,6 @@
 function Footer() {
   return (
-    <footer className="bg-black text-white lg:grid lg:grid-cols-5">
+    <footer className="bg-gradient-to-br from-purple-500 to-indigo-500 text-white lg:grid lg:grid-cols-5">
       <div className="relative block h-24 lg:col-span-2 lg:h-full">
         <img
           src=""
@@ -152,7 +152,7 @@ function Footer() {
       <div className="lg:col-span-5 mt-8 border-t border-gray-100 pt-8">
         <div className="flex justify-center items-center">
           <p className="text-xs text-gray-200">
-            &copy; 2022. Company Name. All rights reserved.
+            &copy; 2025. VIT Bhopal University. All rights reserved.
           </p>
         </div>
       </div>
