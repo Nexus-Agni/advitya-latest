@@ -89,13 +89,13 @@ export const Header = () => {
   return (
     <div className="max-w-7xl h-full relative mx-auto py-20 md:py-40 px-4 w-full flex flex-col md:flex-row  left-0 top-0">
       <div className="w-full">
-        <h1 className="text-2xl md:text-7xl font-bold dark:text-white">
+        <h1 className="text-2xl md:text-7xl font-bold text-white">
           <span className="text-4xl md:text-8xl text-[#B48CDE]">
             AdVITya'25
           </span>
           Unleashing Brilliance,Igniting Minds!
         </h1>
-        <p className="max-w-2xl text-base md:text-xl mt-8 dark:text-neutral-200">
+        <p className="max-w-2xl text-base md:text-xl mt-8 text-neutral-200">
           Dive into the heart of VIT Bhopal with AdVlTya'25 - an electrifying
           blend of technology and culture. Crafted by the ingenious minds of VIT
           Bhopal students, AdVlTya'25 transcends the ordinary, presenting a
