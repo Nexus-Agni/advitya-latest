@@ -2,6 +2,7 @@ import defaultTheme from "tailwindcss/defaultTheme";
 import colors from "tailwindcss/colors";
 import svgToDataUri from "mini-svg-data-uri";
 import flattenColorPalette from "tailwindcss/lib/util/flattenColorPalette";
+import tailwindScrollbar from "tailwind-scrollbar";
 
 /** @type {import('tailwindcss').Config} */
 export default {
@@ -13,6 +14,8 @@ export default {
       },
       animation: {
         spotlight: "spotlight 2s ease .75s 1 forwards",
+        "x-slider": "x-slider 20s linear infinite",
+        gradient: "gradient 8s linear infinite",
       },
       keyframes: {
         spotlight: {
@@ -25,12 +28,6 @@ export default {
             transform: "translate(-50%,-40%) scale(1)",
           },
         },
-      },
-      animation: {
-        "x-slider": "x-slider 20s linear infinite",
-        gradient: "gradient 8s linear infinite",
-      },
-      keyframes: {
         "x-slider": {
           "0%": { transform: "translateX(0)" },
           "100%": { transform: "translateX(-100%)" },
@@ -44,6 +41,7 @@ export default {
     },
   },
   plugins: [
+    tailwindScrollbar,
     addVariablesForColors,
     function ({ matchUtilities, theme }) {
       matchUtilities(

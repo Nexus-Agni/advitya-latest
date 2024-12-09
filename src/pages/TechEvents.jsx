@@ -6,6 +6,7 @@ import GradientText from "../components/ui/GradientText";
 import { technicalEvents } from "../components/Events";
 import { FocusCards } from "../components/ui/focus-cards";
 import { MapPin, Calendar, DollarSign } from "lucide-react";
+import { CustomScrollbar } from "../components/ui/custom-scrollbar";
 
 export function TechEvents() {
   const [active, setActive] = useState(null);
@@ -33,75 +34,73 @@ export function TechEvents() {
   useOutsideClick(ref, () => setActive(null));
 
   return (
-    <>
-      <div className="bg-grid-white/[0.2] h-full w-full">
-        <div className="flex items-center justify-start p-4">
-          <button
-            onClick={() =>
-              navigate("/events", { state: { from: "TechEvents" } })
-            }
-            className="text-white bg-purple-600 py-2 px-4 rounded-lg hover:scale-105 ease-in-out duration-300 flex items-center"
-          >
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              fill="none"
-              viewBox="0 0 24 24"
-              stroke="currentColor"
-              className="h-6 w-6 mr-2"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth="2"
-                d="M15 19l-7-7 7-7"
-              />
-            </svg>
-            Back
-          </button>
-        </div>
-        <GradientText
-          animationSpeed={10}
-          showBorder={false}
-          className="text-4xl md:text-6xl py-10"
+    <div className="bg-grid-white/[0.2] h-full w-full">
+      <div className="flex items-center justify-start p-4">
+        <button
+          onClick={() => navigate("/events", { state: { from: "TechEvents" } })}
+          className="text-white bg-purple-600 py-2 px-4 rounded-lg hover:scale-105 ease-in-out duration-300 flex items-center"
         >
-          Technical Events
-        </GradientText>
-        <AnimatePresence>
-          {active && typeof active === "object" && (
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              className="fixed inset-0 bg-black/20 h-full w-full z-10"
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            className="h-6 w-6 mr-2"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M15 19l-7-7 7-7"
             />
-          )}
-        </AnimatePresence>
-        <AnimatePresence>
-          {active && typeof active === "object" ? (
-            <div className="fixed inset-0 grid place-items-center z-[100] p-4 md:p-0">
-              <motion.button
-                key={`button-${active.title}-${id}`}
-                layout
-                initial={{
-                  opacity: 0,
-                }}
-                animate={{
-                  opacity: 1,
-                }}
-                exit={{
-                  opacity: 0,
-                  transition: {
-                    duration: 0.05,
-                  },
-                }}
-                className="flex absolute top-2 right-2 lg:hidden items-center justify-center bg-white rounded-full h-6 w-6"
-                onClick={() => setActive(null)}
-              ></motion.button>
-              <motion.div
-                layoutId={`card-${active.title}-${id}`}
-                ref={ref}
-                className="w-full max-w-[600px] h-full md:h-fit md:max-h-[90%] flex flex-col bg-white dark:bg-neutral-900 rounded-3xl overflow-scroll overflow-x-hidden"
-              >
+          </svg>
+          Back
+        </button>
+      </div>
+      <GradientText
+        animationSpeed={10}
+        showBorder={false}
+        className="text-4xl md:text-6xl py-10"
+      >
+        Technical Events
+      </GradientText>
+      <AnimatePresence>
+        {active && typeof active === "object" && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 bg-black/20 h-full w-full z-10"
+          />
+        )}
+      </AnimatePresence>
+      <AnimatePresence>
+        {active && typeof active === "object" ? (
+          <div className="fixed inset-0 grid place-items-center z-[100] p-4 md:p-0">
+            <motion.button
+              key={`button-${active.title}-${id}`}
+              layout
+              initial={{
+                opacity: 0,
+              }}
+              animate={{
+                opacity: 1,
+              }}
+              exit={{
+                opacity: 0,
+                transition: {
+                  duration: 0.05,
+                },
+              }}
+              className="flex absolute top-2 right-2 lg:hidden items-center justify-center bg-white rounded-full h-6 w-6"
+              onClick={() => setActive(null)}
+            ></motion.button>
+            <motion.div
+              layoutId={`card-${active.title}-${id}`}
+              ref={ref}
+              className="w-full max-w-[600px] h-full md:h-fit md:max-h-[90%] flex flex-col bg-white dark:bg-neutral-900 rounded-3xl"
+            >
+              <CustomScrollbar className="overflow-scroll overflow-x-hidden">
                 <motion.div layoutId={`image-${active.title}-${id}`}>
                   <img
                     width={300}
@@ -156,27 +155,21 @@ export function TechEvents() {
                     </motion.a>
                   </div>
                   <div className="pt-4 relative px-4">
-                    <motion.div
-                      layout
-                      initial={{ opacity: 0 }}
-                      animate={{ opacity: 1 }}
-                      exit={{ opacity: 0 }}
-                      className="text-neutral-600 text-sm md:text-base lg:text-lg h-40 md:h-fit pb-10 flex flex-col items-start gap-4 overflow-auto dark:text-neutral-400 [mask:linear-gradient(to_bottom,white,white,transparent)] [scrollbar-width:none] [-ms-overflow-style:none] [-webkit-overflow-scrolling:touch]"
-                    >
+                    <CustomScrollbar className="text-neutral-600 text-sm md:text-base lg:text-lg h-40 md:h-fit pb-10 flex flex-col items-start gap-4 overflow-auto dark:text-neutral-400">
                       {typeof active.eventDescription === "function" ? (
                         <div>{active.eventDescription()}</div>
                       ) : (
                         active.eventDescription
                       )}
-                    </motion.div>
+                    </CustomScrollbar>
                   </div>
                 </div>
-              </motion.div>
-            </div>
-          ) : null}
-        </AnimatePresence>
-        <FocusCards cards={technicalEvents} setActive={setActive} />
-      </div>
-    </>
+              </CustomScrollbar>
+            </motion.div>
+          </div>
+        ) : null}
+      </AnimatePresence>
+      <FocusCards cards={technicalEvents} setActive={setActive} />
+    </div>
   );
 }
