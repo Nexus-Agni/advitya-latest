@@ -93,7 +93,6 @@ export const Header = () => {
           <span className="text-4xl md:text-8xl text-[#B48CDE]">
             AdVITya'25
           </span>
-          Unleashing Brilliance,Igniting Minds!
         </h1>
         <p className="max-w-2xl text-base md:text-xl mt-8 text-neutral-200">
           Dive into the heart of VIT Bhopal with AdVlTya'25 - an electrifying
@@ -108,7 +107,7 @@ export const Header = () => {
       </div>
       <div className="w-full">
         <img
-          src="https://res.cloudinary.com/dkjhkep0m/image/upload/v1733631098/lion_amj8sn.svg"
+          src="https://res.cloudinary.com/dkjhkep0m/image/upload/v1733747645/lion_amj8sn.png"
           alt="Lion SVG"
           className="w-full h-full"
         />

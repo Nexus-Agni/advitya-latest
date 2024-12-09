@@ -17,7 +17,7 @@ function Home() {
 
   useEffect(() => {
     // Check if the navigation is coming from ClubEvents
-    if (location.state?.from === "ClubEvents") {
+    if (location.state?.from === "ClubEvents" || location.state?.from === "TechEvents" || location.state?.from === "NonTechEvents" || location.state?.from === "Team") {
       setLoading(false);
     } else {
       // Simulate a loading delay

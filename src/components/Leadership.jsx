@@ -9,7 +9,7 @@ export function Leadership() {
     {
       title: "Dr. G. Viswanathan",
       description: "Chancellor",
-      img: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1733299177/chancellor.jpg",
+      img: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1733749788/chancellor.jpg",
     },
     {
       title: "Mr. Sankar Viswanathan",
@@ -19,7 +19,7 @@ export function Leadership() {
     {
       title: "Ms. Kadhambari S Viswanathan",
       description: "Assistant Vice President",
-      img: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1733299177/avp.jpg",
+      img: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1733750221/avp.jpg",
     },
     {
       title: "Dr. Senthil Kumar Arumugam",
@@ -27,9 +27,9 @@ export function Leadership() {
       img: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1733299177/vc.jpg",
     },
     {
-      title: "Dr. Debashis Adhikari",
+      title: "KK Nair",
       description: "Registrar",
-      img: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1733299177/registrar.jpg",
+      img: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1733751658/registrar.jpg",
     },
   ];
   return (
