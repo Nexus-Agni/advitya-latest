@@ -34,20 +34,17 @@ function Home() {
   }
 
   return (
-    <div>
-      <div className="bg-black w-full">
-        <Navbar />
-        <Hero />
-        <AdvityaDescription classname="bg-black" />
-        <br />
-        <Video className="hidden md:block"/>
-        <br />
-        {/* <Highlights /> */}
-        <KeyHighlights />
-        <Leadership />
-        <ContactUsSection id="contact" />
-        <Footer />
-      </div>
+    <div className="bg-black w-full">
+      <Navbar />
+      <Hero />
+      <AdvityaDescription classname="bg-black" />
+      <br />
+      <Video className="hidden md:block" />
+      <br />
+      <KeyHighlights />
+      <Leadership />
+      <ContactUsSection id="contact" />
+      <Footer />
     </div>
   );
 }
