@@ -104,7 +104,7 @@ export default function TeamMembersPage() {
             Back
           </button>
         </div>
-      <div className="max-w-7xl mx-auto border-2 border-white">
+      <div className="max-w-7xl mx-auto ">
         <h1 className="text-4xl font-bold text-center mb-12 text-purple-400">Our Team Members</h1>
         
         <section className="mb-16">

@@ -56,7 +56,7 @@ export const Countdown: React.FC<CountdownProps> = ({ targetDate }) => {
 
   return (
     <div className="p-8 rounded-xl bg-white bg-opacity-10 backdrop-blur-xl shadow-2xl">
-      <h2 className="text-3xl font-bold text-purple-500 text-center mb-8">Countdown Timer</h2>
+      <h2 className="text-3xl font-bold text-purple-500 text-center mb-8">Coming Soon </h2>
       <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
         <CountdownUnit value={days} label="Days" color="text-purple-500" />
         <CountdownUnit value={hours} label="Hours" color="text-violet-500" />
