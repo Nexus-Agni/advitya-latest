@@ -1,6 +1,6 @@
 import { Carousel, Card } from "./ui/apple-cards-carousal";
 import GradientText from "./ui/GradientText";
-import SportsFest from "../assets/Sportsfest1.jpg";
+
 
 export function KeyHighlights() {
   const cards = data.map((card, index) => (
@@ -70,24 +70,24 @@ const data = [
     title: "Celebrate the richness of culture and arts.",
     src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1734025186/Dance_cukv8g.jpg",
   },
-  {
-    category: "Workshops",
-    title: "Participate in engaging and informative workshops.",
-    src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1734025186/Workshop_example.jpg",
-  },
-  {
-    category: "Guest Lectures",
-    title: "Learn from industry experts in our guest lectures.",
-    src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1734025186/Guest_Lecture_example.jpg",
-  },
-  {
-    category: "Competitions",
-    title: "Showcase your skills in various competitions.",
-    src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1734025186/Competition_example.jpg",
-  },
-  {
-    category: "Networking",
-    title: "Connect with peers and professionals.",
-    src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1734025186/Networking_example.jpg",
-  },
+  // {
+  //   category: "Workshops",
+  //   title: "Participate in engaging and informative workshops.",
+  //   src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1734025186/Workshop_example.jpg",
+  // },
+  // {
+  //   category: "Guest Lectures",
+  //   title: "Learn from industry experts in our guest lectures.",
+  //   src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1734025186/Guest_Lecture_example.jpg",
+  // },
+  // {
+  //   category: "Competitions",
+  //   title: "Showcase your skills in various competitions.",
+  //   src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1734025186/Competition_example.jpg",
+  // },
+  // {
+  //   category: "Networking",
+  //   title: "Connect with peers and professionals.",
+  //   src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1734025186/Networking_example.jpg",
+  // },
 ];

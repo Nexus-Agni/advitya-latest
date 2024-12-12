@@ -20,7 +20,7 @@ function Navbar1({ className }) {
           <img src="https://res.cloudinary.com/dkjhkep0m/image/upload/v1733299178/VIT%20Logo.png" alt="Logo" className='h-10 w-full' />
         </a>
         <div className='hidden lg:flex space-x-6 my-auto lg:justify-center lg:items-center '>
-          <a href="#contact" className='text-white hover:text-purple-400 transition ease-in-out duration-300 '>Contact Us</a>
+          <Link to="#contact" className='text-white hover:text-purple-400 transition ease-in-out duration-300 '>Contact Us</Link>
           <Link to="/events">
             <button className='text-white bg-purple-600  py-1 px-4 rounded-lg hover:scale-105 ease-in-out duration-300'>
               Events
@@ -68,7 +68,7 @@ function Navbar1({ className }) {
       {isMobileMenuOpen && (
         <div className="lg:hidden bg-white dark:bg-black shadow-lg">
           <div className='flex flex-col space-y-4 px-8 py-6 justify-center items-center'>
-            <a href="#contact" className='text-white'>Contact Us</a>
+            <Link to="#contact" className='text-white'>Contact Us</Link>
             <Link to="/events">
               <button className='text-white bg-purple-600 py-1 px-4 rounded-lg hover:scale-105 ease-in-out duration-300'>
                 Events
