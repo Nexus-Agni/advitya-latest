@@ -1,12 +1,10 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 import { cn } from "../utils/cn";
 import { Menu } from "./ui/navbar-menu";
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 export function Navbar() {
-  return (
-    <Navbar1 className="top-2" />
-  );
+  return <Navbar1 className="top-2" />;
 }
 
 function Navbar1({ className }) {
@@ -14,15 +12,29 @@ function Navbar1({ className }) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   return (
-    <div className={cn(`fixed top-10 inset-x-0 max-w-2xl mx-auto z-50 `, className)}>
+    <div
+      className={cn(
+        `fixed top-10 inset-x-0 max-w-2xl mx-auto z-50 `,
+        className
+      )}
+    >
       <Menu setActive={setActive} className="bg-white">
-        <a href="https://vitbhopal.ac.in" target='_blank'>
-          <img src="https://res.cloudinary.com/dkjhkep0m/image/upload/v1733299178/VIT%20Logo.png" alt="Logo" className='h-10 w-full' />
+        <a href="https://vitbhopal.ac.in" target="_blank">
+          <img
+            src="https://res.cloudinary.com/dkjhkep0m/image/upload/v1733299178/VIT%20Logo.png"
+            alt="Logo"
+            className="h-10 w-full"
+          />
         </a>
-        <div className='hidden lg:flex space-x-6 my-auto lg:justify-center lg:items-center '>
-          <Link to="#contact" className='text-white hover:text-purple-400 transition ease-in-out duration-300 '>Contact Us</Link>
+        <div className="hidden lg:flex space-x-6 my-auto lg:justify-center lg:items-center ">
+          <Link
+            to="/#contact"
+            className="text-white hover:text-purple-400 transition ease-in-out duration-300 "
+          >
+            Contact Us
+          </Link>
           <Link to="/events">
-            <button className='text-white bg-purple-600  py-1 px-4 rounded-lg hover:scale-105 ease-in-out duration-300'>
+            <button className="text-white bg-purple-600  py-1 px-4 rounded-lg hover:scale-105 ease-in-out duration-300">
               Events
             </button>
           </Link>
@@ -67,10 +79,12 @@ function Navbar1({ className }) {
       </Menu>
       {isMobileMenuOpen && (
         <div className="lg:hidden bg-white dark:bg-black shadow-lg">
-          <div className='flex flex-col space-y-4 px-8 py-6 justify-center items-center'>
-            <Link to="#contact" className='text-white'>Contact Us</Link>
+          <div className="flex flex-col space-y-4 px-8 py-6 justify-center items-center">
+            <Link to="/#contact" className="text-white">
+              Contact Us
+            </Link>
             <Link to="/events">
-              <button className='text-white bg-purple-600 py-1 px-4 rounded-lg hover:scale-105 ease-in-out duration-300'>
+              <button className="text-white bg-purple-600 py-1 px-4 rounded-lg hover:scale-105 ease-in-out duration-300">
                 Events
               </button>
             </Link>

@@ -16,8 +16,13 @@ function Home() {
   const location = useLocation();
 
   useEffect(() => {
-    // Check if the navigation is coming from ClubEvents
-    if (location.state?.from === "ClubEvents" || location.state?.from === "TechEvents" || location.state?.from === "NonTechEvents" || location.state?.from === "Team") {
+    // Check if the navigation is coming from specific pages
+    if (
+      location.state?.from === "ClubEvents" ||
+      location.state?.from === "TechEvents" ||
+      location.state?.from === "NonTechEvents" ||
+      location.state?.from === "Team"
+    ) {
       setLoading(false);
     } else {
       // Simulate a loading delay
@@ -26,6 +31,15 @@ function Home() {
       }, 5000); // Adjust the delay as needed
 
       return () => clearTimeout(timer);
+    }
+  }, [location]);
+
+  useEffect(() => {
+    if (location.hash) {
+      const element = document.getElementById(location.hash.substring(1));
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
+      }
     }
   }, [location]);
 
