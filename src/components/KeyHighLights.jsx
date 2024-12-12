@@ -17,73 +17,77 @@ export function KeyHighlights() {
   );
 }
 
-const DummyContent = () => {
-  return (
-    <>
-      {[...new Array(3).fill(1)].map((_, index) => {
-        return (
-          <div
-            key={"dummy-content" + index}
-            className="bg-[#F5F5F7] dark:bg-neutral-800 p-0 md:p-14 rounded-3xl mb-4"
-          >
-            <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
-              <span className="font-bold text-neutral-700 dark:text-neutral-200">
-                The first rule of Apple club is that you boast about Apple club.
-              </span>{" "}
-              Keep a journal, quickly jot down a grocery list, and take amazing
-              class notes. Want to convert those notes to text? No problem.
-              Langotiya jeetu ka mara hua yaar is ready to capture every
-              thought.
-            </p>
-            <img
-              src="https://assets.aceternity.com/macbook.png"
-              alt="Macbook mockup from Aceternity UI"
-              height="500"
-              width="500"
-              className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
-            />
-          </div>
-        );
-      })}
-    </>
-  );
-};
+// const DummyContent = () => {
+//   return (
+//     <>
+//       {[...new Array(3).fill(1)].map((_, index) => {
+//         return (
+//           <div
+//             key={"dummy-content" + index}
+//             className="bg-[#F5F5F7] dark:bg-neutral-800 p-0 md:p-14 rounded-3xl mb-4"
+//           >
+//             <p className="text-neutral-600 dark:text-neutral-400 text-base md:text-2xl font-sans max-w-3xl mx-auto">
+//               <span className="font-bold text-neutral-700 dark:text-neutral-200">
+//                 The first rule of Apple club is that you boast about Apple club.
+//               </span>{" "}
+//               Keep a journal, quickly jot down a grocery list, and take amazing
+//               class notes. Want to convert those notes to text? No problem.
+//               Langotiya jeetu ka mara hua yaar is ready to capture every
+//               thought.
+//             </p>
+//             <img
+//               src="https://assets.aceternity.com/macbook.png"
+//               alt="Macbook mockup from Aceternity UI"
+//               height="500"
+//               width="500"
+//               className="md:w-1/2 md:h-1/2 h-full w-full mx-auto object-contain"
+//             />
+//           </div>
+//         );
+//       })}
+//     </>
+//   );
+// };
 
 const data = [
   {
-    category: "SportsFest",
-    title: "You can do more with AI.",
-    src: SportsFest,
-    content: <DummyContent />,
+    category: "Celebrations with Music",
+    title: "Experience the best musical performances.",
+    src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1734025186/Pro-show_gyfl2g.jpg",
   },
   {
     category: "SportsFest",
-    title: "You can do more with AI.",
-    src: SportsFest,
-    content: <DummyContent />,
+    title: "Join the excitement of our sports events.",
+    src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1734025186/Sports_dhaqdh.jpg",
   },
   {
-    category: "SportsFest",
-    title: "You can do more with AI.",
-    src: SportsFest,
-    content: <DummyContent />,
+    category: "Technology and Innovation",
+    title: "Discover the latest in technology and innovation.",
+    src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1734025186/Technical_ceuyuy.jpg",
   },
   {
-    category: "Day-1",
-    title: "Enhance your productivity.",
-    // src: "./images/DSC00232.JPG",
-    content: <DummyContent />,
+    category: "Culture & Arts",
+    title: "Celebrate the richness of culture and arts.",
+    src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1734025186/Dance_cukv8g.jpg",
   },
   {
-    category: "Day-2",
-    title: "Launching the new Apple Vision Pro.",
-    // src: "./images/DSC_6664.JPG",
-    content: <DummyContent />,
+    category: "Workshops",
+    title: "Participate in engaging and informative workshops.",
+    src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1734025186/Workshop_example.jpg",
   },
   {
-    category: "Day-3",
-    title: "Maps for your iPhone 15 Pro Max.",
-    // src: "./images/DSC_5602.JPG",
-    content: <DummyContent />,
+    category: "Guest Lectures",
+    title: "Learn from industry experts in our guest lectures.",
+    src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1734025186/Guest_Lecture_example.jpg",
+  },
+  {
+    category: "Competitions",
+    title: "Showcase your skills in various competitions.",
+    src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1734025186/Competition_example.jpg",
+  },
+  {
+    category: "Networking",
+    title: "Connect with peers and professionals.",
+    src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1734025186/Networking_example.jpg",
   },
 ];
