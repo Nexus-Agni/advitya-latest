@@ -103,13 +103,17 @@ export default function TeamMembersPage() {
         </button>
       </div>
       <div className="max-w-7xl mx-auto">
-        <h1 className="text-4xl font-bold text-center mb-12 text-purple-400">The Minds Behind AdVITya'25</h1>
+        <h1 className="text-4xl font-bold text-center mb-12 text-purple-400">The Creative Minds Behind AdVITya'25</h1>
         
         <section className="mb-16">
-          <h2 className="text-3xl font-bold mb-8 text-purple-300 text-center">Our Patrons</h2>
+          <h2 className="text-3xl font-bold mb-8 text-purple-300 text-center">Our Patron</h2>
           <div className="flex justify-center mb-8">
             <LeadershipCard member={chancellor} showImage={true} />
           </div>
+        </section>
+
+        <section className="mb-16">
+        <h2 className="text-3xl font-bold mb-8 text-purple-300 text-center">Our Co-Patrons</h2>
           <LeadershipSection members={vicePresidents} showImage={true} />
           <LeadershipSection members={administration} showImage={true} />
         </section>
