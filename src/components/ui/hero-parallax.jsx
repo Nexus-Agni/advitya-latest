@@ -94,7 +94,7 @@ export const Header = () => {
             AdVITya'25
           </span>
         </h1>
-        <p className="max-w-2xl text-base md:text-xl mt-8 text-neutral-200">
+        <p className="max-w-2xl text-base md:text-xl mt-8 text-neutral-200 text-justify">
           Dive into the heart of VIT Bhopal with AdVlTya'25 - an electrifying
           blend of technology and culture. Crafted by the ingenious minds of VIT
           Bhopal students, AdVlTya'25 transcends the ordinary, presenting a
@@ -105,11 +105,11 @@ export const Header = () => {
           center stage, inviting you to witness and be part of the magic!
         </p>
       </div>
-      <div className="w-full">
+      <div className="w-full md:w-[80%]">
         <img
-          src="https://res.cloudinary.com/dkjhkep0m/image/upload/v1733747645/lion_amj8sn.png"
+          src="https://res.cloudinary.com/dkjhkep0m/image/upload/v1734015954/lion_amj8sn.png"
           alt="Lion SVG"
-          className="w-full h-full"
+          className="w-full h-full "
         />
       </div>
     </div>

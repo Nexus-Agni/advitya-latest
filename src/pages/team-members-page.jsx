@@ -43,7 +43,7 @@ export default function TeamMembersPage() {
   ]
 
   const convenor = [
-    { name: "Dr. John Doe", position: "Convenor" },
+    { name: "Dr. Yogesh Shukla", position: "Convenor" },
   ]
 
   const coConvenors = [
@@ -52,28 +52,28 @@ export default function TeamMembersPage() {
   ]
 
   const facultyOrganisers = [
-    { name: "Dr. Alice Johnson", position: "Director of Student Welfare" },
-    { name: "Prof. Bob Williams", position: "Assistant Director of Student Welfare" },
-    { name: "Dr. Emily Brown", position: "Assistant Director of Student Welfare" },
-    { name: "Dr. David Lee", position: "Assistant Director of Student Welfare" },
-    { name: "Prof. Sarah Connor", position: "Assistant Director of Student Welfare" },
+    { name: "Dr. Alice Johnson", position: "Technical Events" },
+    { name: "Prof. Bob Williams", position: "Non-Technical Events" },
+    { name: "Dr. Emily Brown", position: "Pro-show" },
+    { name: "Dr. David Lee", position: "Finance" },
+    { name: "Prof. Sarah Connor", position: "Guest and Hospitality" },
   ]
 
   const studentOrganisers = [
     { name: "Alex Turner", position: "General Secretary" },
-    { name: "Olivia Martinez", position: "Joint Secretary" },
-    { name: "Ryan Patel", position: "Academic Secretary" },
-    { name: "Sophia Nguyen", position: "Cultural Secretary" },
-    { name: "David Kim", position: "Technical Secretary" },
-    { name: "Emma Wilson", position: "Assistant Cultural Secretary" },
-    { name: "James Taylor", position: "Assistant Cultural Secretary" },
-    { name: "Natalie Parker", position: "Assistant Technical Secretary" },
-    { name: "Chris Evans", position: "Assistant Technical Secretary" },
-    { name: "Sarah Lee", position: "Sports Secretary" },
-    { name: "Michael Chen", position: "Assistant Sports Secretary" },
-    { name: "Lisa Wong", position: "Assistant Sports Secretary" },
-    { name: "Tom Harris", position: "Assistant Sports Secretary" },
-    { name: "Rachel Green", position: "Assistant Sports Secretary" },
+    { name: "Olivia Martinez", position: "Sponsorship " },
+    { name: "Ryan Patel", position: "Technical " },
+    { name: "Sarah Lee", position: "Non-Technical " },
+    { name: "Emma Wilson", position: "Compering " },
+    { name: "Chris Evans", position: "Hospitality " },
+    { name: "David Kim", position: "Sports " },
+    { name: "James Taylor", position: "Marketing " },
+    { name: "Sarah Lee", position: "Media " },
+    { name: "Michael Chen", position: "Developer " },
+    { name: "Lisa Wong", position: "Stage and Sound " },
+    { name: "Tom Harris", position: "Event Management " },
+    { name: "Tom Harris", position: "Creative " },
+    { name: "Natalie Parker", position: "Press and Report " },
   ]
 
   const navigate = useNavigate();

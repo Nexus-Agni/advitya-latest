@@ -48,7 +48,7 @@ export const Video = () => {
         }}
         className="max-w-7xl pl-4 mx-auto text-2xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans hidden md:block"
       >
-        Advitya&apos;24 Highlights.
+        AdVITya&apos;24 Highlights.
       </h2>
       <br />
       <br />

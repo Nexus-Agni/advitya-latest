@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Label } from "./ui/label";
 import { Input } from "./ui/input";
 import { cn } from "../utils/cn";
+import { toast } from "react-toastify";
 
 export function ContactForm() {
   const [firstname, setFirstname] = useState("");
@@ -18,16 +19,16 @@ export function ContactForm() {
       message === "" ||
       phoneNumber === ""
     ) {
-      alert("Please fill all the fields");
+      toast.warning("Please fill all the fields");
     }
     // checking if the email is valid
     if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-      alert("Please enter a valid email address");
+      toast.warning("Please enter a valid email address");
       return;
     }
     // checking if the phone number is valid
     if (!/^[0-9]{10}$/.test(phoneNumber)) {
-      alert("Please enter a valid phone number");
+      toast.warning("Please enter a valid phone number");
       return;
     }
     const formData = new FormData();
@@ -38,7 +39,7 @@ export function ContactForm() {
     formData.append("message", message);
 
     fetch(
-      "https://script.google.com/macros/s/AKfycbyyK4BqsPukMnwFOf_4oH3gUU_7Bqgui1UM95cCL2qQIff02P9pDYiQ8_KYNtDuYj2zCw/exec",
+      "https://script.google.com/macros/s/AKfycbybLHCTl5trigoTqAR5YR9ScQEySbGmTHjGVNnQpifRbQPdOje4hY0MQhHlKkiyrTYz/exec",
       {
         method: "POST",
         body: formData,
@@ -46,7 +47,7 @@ export function ContactForm() {
       }
     )
       .then(() => {
-        alert("Form Submitted Successfully");
+        toast.success("Form Submitted Successfully");
         setFirstname("");
         setLastname("");
         setEmail("");
@@ -54,12 +55,12 @@ export function ContactForm() {
         setphoneNumber("");
       })
       .catch((error) => {
-        alert("Error in submitting the form");
+        toast.error("Error in submitting the form");
         console.log(error);
       });
   };
   return (
-    <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8  shadow-input bg-white dark:bg-black">
+    <div className="max-w-md w-full mx-auto rounded-none md:rounded-2xl p-4 md:p-8  shadow-input bg-black">
       <form className="my-8">
         <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 mb-4">
           <LabelInputContainer>
@@ -120,7 +121,7 @@ export function ContactForm() {
         </LabelInputContainer>
 
         <button
-          className="bg-gradient-to-br from-black dark:from-zinc-900 to-neutral-600 block w-full text-white rounded-md h-10 font-medium hover:bg-purple-700 ease-in-out duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-purple-500 focus-visible:ring-offset-neutral-100 dark:focus-visible:ring-offset-neutral-800 dark:focus-visible:ring-orange-500"
+          className="bg-gradient-to-br from-zinc-900 to-neutral-600 block w-full text-white rounded-md h-10 font-medium hover:bg-purple-700 ease-in-out duration-300 focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 focus-visible:ring-purple-500 focus-visible:ring-offset-neutral-800 "
           type="submit"
           onClick={handleSubmit}
         >

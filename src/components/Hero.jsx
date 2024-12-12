@@ -13,7 +13,7 @@ const Hero = () => {
 
   return (
     <section
-      className="relative min-h-[calc(100vh-50px)] overflow-hidden py-16 md:py-[10rem]"
+      className="relative min-h-[calc(100vh-50px)] overflow-hidden py-16 "
       style={{
         backgroundImage: `url(https://res.cloudinary.com/dkjhkep0m/image/upload/v1733569739/BG1.png)`,
         backgroundPosition: "center",
@@ -25,17 +25,22 @@ const Hero = () => {
         <div className="dark:border-dark-border col-span-1 flex h-full items-center justify-center border-x border-white/10" />
         <div className="col-span-1 flex h-full items-center justify-center" />
       </div>
+      
       <figure className="bg-accent-500/40 pointer-events-none absolute -bottom-[70%] left-1/2 z-0 block aspect-square w-[520px] -translate-x-1/2 rounded-full blur-[200px]" />
       <figure className="bg-surface-primary dark:bg-dark-surface-primary pointer-events-none absolute left-[4vw] top-[64px] z-20 hidden aspect-square w-[32vw] rounded-full opacity-50 blur-[100px] md:block" />
       <figure className="bg-surfce-primary dark:bg-dark-surface-primary pointer-events-none absolute bottom-[-50px] right-[7vw] z-20 hidden aspect-square w-[30vw] rounded-full opacity-50 blur-[100px] md:block" />
-      <div className="dark:divide-dark-border relative z-10 flex flex-col divide-y divide-black/10 pt-[35px]">
+      <div className="dark:divide-dark-border relative z-10 flex flex-col divide-y divide-black/10 pt-[35px] md:pt-0">
         <div className="flex flex-col items-center justify-end">
           <div className="dark:border-dark-border flex items-center gap-2 !border !border-b-0 border-black/5 px-4 py-2">
             <p className="text-text-tertiary dark:text-dark-text-tertiary text-sm tracking-tight"></p>
           </div>
         </div>
         <div>
-          <div className="mx-auto flex h-auto max-w-[90vw] shrink-0 flex-col items-center justify-center gap-2 px-2 py-4 sm:px-10 lg:px-24">
+          <div className="mx-auto flex h-auto max-w-[90vw] shrink-0 flex-col items-center justify-center gap-2 px-2  sm:px-10 lg:px-24">
+            {/* <div >
+              <img src="https://res.cloudinary.com/dkjhkep0m/image/upload/v1733809264/Advitya25_logo_yscnk6.png" alt="" className="h-[30rem] w-[30rem]"/>
+            </div> */}
+            <img src="https://res.cloudinary.com/dkjhkep0m/image/upload/v1733809264/Advitya25_logo_yscnk6.png" alt="AdVITya Logo" className="md:h-[30rem] md:w-[30rem] h-[20rem] w-[20rem] "/>
             <h1 className="text-text-primary dark:text-dark-text-primary text-pretty text-center text-5xl  md:text-6xl lg:text-[clamp(50px,7vw,75px)] font-medium leading-none tracking-[-1.44px] md:max-w-screen-lg md:tracking-[-2.16px] text-gray-200">
               Join us at{" "}
               <GradientText
@@ -69,9 +74,9 @@ const Hero = () => {
             <a href="/docs" className="cursor-pointer w-full"></a>
           </div>
         </div>
-        <div className="mx-auto max-w-7xl">
+        {/* <div className="mx-auto max-w-7xl">
           <AnimatedLogoCloud />
-        </div>
+        </div> */}
       </div>
     </section>
   );
