@@ -57,7 +57,7 @@ function Home() {
       <br />
       <KeyHighlights />
       <Leadership />
-      <ContactUsSection id="contact" />
+      <ContactUsSection />
       <Footer />
     </div>
   );
