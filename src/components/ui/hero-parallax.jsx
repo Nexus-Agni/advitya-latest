@@ -87,8 +87,8 @@ export const HeroParallax = ({ products }) => {
 
 export const Header = () => {
   return (
-    <div className="max-w-7xl h-full relative mx-auto py-20 md:py-40 px-4 w-full flex flex-col md:flex-row  left-0 top-0">
-      <div className="w-full">
+    <div className="max-w-7xl h-full relative mx-auto py-20 md:py-40 px-4 w-full flex flex-col md:flex-row  left-0 top-0 ">
+      <div className="w-full md:w-1/2">
         <h1 className="text-2xl md:text-7xl font-bold text-white">
           <span className="text-4xl md:text-8xl text-[#B48CDE]">
             AdVITya'25
@@ -105,7 +105,7 @@ export const Header = () => {
           center stage, inviting you to witness and be part of the magic!
         </p>
       </div>
-      <div className="w-full md:w-[80%]">
+      <div className="w-full md:w-1/2">
         <img
           src="https://res.cloudinary.com/dkjhkep0m/image/upload/v1734015954/lion_amj8sn.png"
           alt="Lion SVG"
