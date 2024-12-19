@@ -49,26 +49,24 @@ export const technicalEvents = [
     },
   },
   {
-    title: "Wolf of the Mock Street",
-    clubName: "Blockchain Club",
-    src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1734602093/blockchain-2_mm5ixj.png",
+    title: "Dreamscape Odyssey",
+    clubName: "E - Green Club",
+    src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1734602507/e-green-club_q4kt2k.png",
     ctaText: "Register",
-    ctaLink: "https://forms.gle/Uy9bFW8sc4NCRHDU8",
-    venue: "Lab 3",
-    date: "25th February 2024",
-    entryFees: "$15",
+    ctaLink: "https://forms.gle/7bUqD6yVKuf3qSZA7",
+    venue: "Lab 1",
+    date: "28th February 2024",
+    entryFees: "$10",
     eventDescription: () => {
       return (
         <p>
-          Experience the thrill of the trading floor without the real-world
-          risks in our exciting fake trading game! We’ll provide a dynamic
-          platform and virtual currency for you to buy and sell stocks, crypto,
-          and other assets in real time. Your mission is to outsmart your
-          competitors, make strategic trades, and maximize your profits to climb
-          to the top. The participant with the highest gains at the end will
-          emerge victorious and be handsomely rewarded. Plus, stay on the
-          lookout – there may be other fun and engaging activities sprinkled
-          throughout the day to keep the energy high and the excitement rolling!
+          Dreamscape Odyssey invites you to embark on a sustainable journey
+          through virtual reality. Experience the magic of technology as you
+          dive into stunning underwater worlds, trek through lush rainforests,
+          and explore futuristic eco-cities. Encounter diverse ecosystems, solve
+          environmental challenges, and witness the power of sustainable
+          solutions. Join us for an unforgettable VR experience that inspires
+          environmental consciousness.
         </p>
       );
     },
@@ -173,24 +171,26 @@ export const technicalEvents = [
     },
   },
   {
-    title: "Dreamscape Odyssey",
-    clubName: "E - Green Club",
-    src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1734602507/e-green-club_q4kt2k.png",
+    title: "Wolf of the Mock Street",
+    clubName: "Blockchain Club",
+    src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1734602093/blockchain-2_mm5ixj.png",
     ctaText: "Register",
-    ctaLink: "https://forms.gle/7bUqD6yVKuf3qSZA7",
-    venue: "Lab 1",
-    date: "28th February 2024",
-    entryFees: "$10",
+    ctaLink: "https://forms.gle/Uy9bFW8sc4NCRHDU8",
+    venue: "Lab 3",
+    date: "25th February 2024",
+    entryFees: "$15",
     eventDescription: () => {
       return (
         <p>
-          Dreamscape Odyssey invites you to embark on a sustainable journey
-          through virtual reality. Experience the magic of technology as you
-          dive into stunning underwater worlds, trek through lush rainforests,
-          and explore futuristic eco-cities. Encounter diverse ecosystems, solve
-          environmental challenges, and witness the power of sustainable
-          solutions. Join us for an unforgettable VR experience that inspires
-          environmental consciousness.
+          Experience the thrill of the trading floor without the real-world
+          risks in our exciting fake trading game! We’ll provide a dynamic
+          platform and virtual currency for you to buy and sell stocks, crypto,
+          and other assets in real time. Your mission is to outsmart your
+          competitors, make strategic trades, and maximize your profits to climb
+          to the top. The participant with the highest gains at the end will
+          emerge victorious and be handsomely rewarded. Plus, stay on the
+          lookout – there may be other fun and engaging activities sprinkled
+          throughout the day to keep the energy high and the excitement rolling!
         </p>
       );
     },
