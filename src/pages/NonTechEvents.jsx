@@ -135,11 +135,11 @@ export function NonTechEvents() {
                           exit={{ opacity: 0 }}
                           className="text-neutral-600 dark:text-neutral-400 text-sm"
                         >
-                          <div className="flex flex-wrap">
+                          {/* <div className="flex flex-wrap">
                             <MapPin className="w-4 h-4 mr-1" /> {active.venue} |{" "}
                             <Calendar className="w-4 h-4 mr-1" /> {active.date} |{" "}
                             <DollarSign className="w-4 h-4 mr-1" /> {active.entryFees}
-                          </div>
+                          </div> */}
                         </motion.p>
                       </div>
 

@@ -5,33 +5,33 @@ import { ClubEvents } from "./components/ClubEvents";
 import { TechEvents } from "./pages/TechEvents";
 import { NonTechEvents } from "./pages/NonTechEvents";
 import { ToastContainer } from "react-toastify";
-import 'react-toastify/dist/ReactToastify.css';
-import TeamMembersPage from "./pages/team-members-page";
-// import ProNight from "./pages/ProNight";
+import "react-toastify/dist/ReactToastify.css";
+// import TeamMembersPage from "./pages/team-members-page";
+import ProNight from "./pages/ProNight";
 
 function App() {
   return (
     <>
-    
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/events" element={<ClubEvents />} />
         <Route path="/technical-events" element={<TechEvents />} />
         <Route path="/non-technical-events" element={<NonTechEvents />} />
-        <Route path="/team" element={<TeamMembersPage />} />
-        {/* <Route path="/pro-night" element={<ProNight />} /> */}
+        {/* <Route path="/team" element={<TeamMembersPage />} /> */}
+        <Route path="/pro-night" element={<ProNight />} />
       </Routes>
       <ToastContainer
-      position="top-right"
-      autoClose={5000}
-      hideProgressBar={false}
-      newestOnTop={false}
-      closeOnClick
-      rtl={false}
-      pauseOnFocusLoss
-      draggable
-      pauseOnHover
-      theme="dark"/>
+        position="top-right"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark"
+      />
     </>
   );
 }
