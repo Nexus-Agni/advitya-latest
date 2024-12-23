@@ -1,4 +1,4 @@
-import { useNavigate } from "react-router-dom";
+import { useNavigate, Link } from "react-router-dom";
 import { CardBody, CardContainer, CardItem } from "./ui/3d-card";
 import GradientText from "./ui/GradientText";
 
@@ -78,14 +78,14 @@ export function ClubEvents() {
                   />
                 </CardItem>
                 <div className="flex justify-center items-center mt-20">
+                  <Link to={card.link}>
                   <CardItem
                     translateZ={20}
-                    as="a"
-                    href={card.link}
                     className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
                   >
                     Learn more →
                   </CardItem>
+                  </Link>
                 </div>
               </CardBody>
             </CardContainer>
