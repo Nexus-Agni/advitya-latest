@@ -4,7 +4,7 @@ import { Countdown } from "../Countdown";
 
 export default function BackgroundBeamsWithCollisionDemo() {
 
-  const targetDate = new Date('2025-01-20T00:00:00');
+  const targetDate = new Date('2025-02-20T08:00:00');
   return (
     (<BackgroundBeamsWithCollision className={"h-screen"}>
       <h2
