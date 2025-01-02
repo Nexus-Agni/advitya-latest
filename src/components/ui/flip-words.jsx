@@ -2,6 +2,7 @@
 import React, { useCallback, useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { cn } from "../../utils/cn";
+import GradientText from "./GradientText";
 
 export const FlipWords = ({
   words,
@@ -78,7 +79,13 @@ export const FlipWords = ({
                   duration: 0.2,
                 }}
                 className="inline-block">
-                {letter}
+                  <GradientText
+                    animationSpeed={10}
+                    showBorder={false}
+                  >
+                    {letter}
+                  </GradientText>
+                
               </motion.span>
             ))}
             <span className="inline-block">&nbsp;</span>

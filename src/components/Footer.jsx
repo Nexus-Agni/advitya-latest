@@ -26,9 +26,9 @@ function Footer() {
     <footer className="bg-gradient-to-br from-purple-500 to-indigo-500 text-white lg:grid lg:grid-cols-5">
       <div className="relative lg:col-span-2 lg:h-full mx-auto flex justify-center items-center">
         <img
-          src="https://res.cloudinary.com/dkjhkep0m/image/upload/v1734017705/Advitya25_logo_BLACK_abytzs.png"
+          src="https://res.cloudinary.com/dkjhkep0m/image/upload/v1735833324/Advitya25_logo_white_k5zfff.png"
           alt="Advitya Logo"
-          className="h-[10rem] my-6 md:py-0 w-[16rem] md:h-[16rem] md:w-[24rem] "
+          className="h-[10rem] my-6 md:py-0 w-[16rem] md:h-[12rem] md:w-[14rem] "
         />
       </div>
 

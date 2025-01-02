@@ -54,7 +54,7 @@ export function ClubEvents() {
             showBorder={false}
             className="md:text-8xl text-5xl"
           >
-            Our Events
+            OUR EVENTS
           </GradientText>
         </div>
 
@@ -83,7 +83,7 @@ export function ClubEvents() {
                     translateZ={20}
                     className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
                   >
-                    Learn more →
+                    Know more →
                   </CardItem>
                   </Link>
                 </div>

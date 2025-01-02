@@ -15,7 +15,7 @@ const Hero = () => {
     <section
       className="relative min-h-[calc(100vh-50px)] overflow-hidden py-16 "
       style={{
-        backgroundImage: `url(https://res.cloudinary.com/dkjhkep0m/image/upload/v1733569739/BG1.png)`,
+        backgroundImage: `url(https://res.cloudinary.com/dkjhkep0m/image/upload/v1735828654/advityabg1_hl54eu.png)`,
         backgroundPosition: "center",
         backgroundSize: "cover",
       }}
@@ -40,23 +40,29 @@ const Hero = () => {
             {/* <div >
               <img src="https://res.cloudinary.com/dkjhkep0m/image/upload/v1733809264/Advitya25_logo_yscnk6.png" alt="" className="h-[30rem] w-[30rem]"/>
             </div> */}
-            <img src="https://res.cloudinary.com/dkjhkep0m/image/upload/v1733809264/Advitya25_logo_yscnk6.png" alt="AdVITya Logo" className="md:h-[30rem] md:w-[30rem] h-[20rem] w-[20rem] "/>
-            <h1 className="text-text-primary dark:text-dark-text-primary text-pretty text-center text-5xl  md:text-6xl lg:text-[clamp(50px,7vw,75px)] font-medium leading-none tracking-[-1.44px] md:max-w-screen-lg md:tracking-[-2.16px] text-gray-200">
-              Join us at{" "}
-              <GradientText
-                animationSpeed={4}
-                showBorder={false}
-                display="inline"
-                className="font-bold"
-                //TODO change colors here
-                colors={["#00BFFF", "#7FFF00", "#FFD700"]}
-              >
-                AdVITya&apos;25
-              </GradientText>
+            <img src="https://res.cloudinary.com/dkjhkep0m/image/upload/v1733809264/Advitya25_logo_yscnk6.png" alt="AdVITya Logo" className="md:h-[32rem] md:w-[30rem] h-[20rem] w-[20rem] "/>
+            {/* <h2 className="text-text-primary dark:text-dark-text-primary text-pretty text-center text-3xl  md:text-4xl lg:text-[clamp(50px,7vw,75px)] font-medium leading-none tracking-[-1.44px] md:max-w-screen-lg md:tracking-[-2.16px] text-gray-200">20th - 22nd Feb, 2025</h2> */}
+            <h1 className="text-text-primary dark:text-dark-text-primary text-pretty text-center text-3xl  md:text-5xl  font-medium leading-none tracking-[-1.44px] md:max-w-screen-lg md:tracking-[-2.16px] text-gray-200">
+              Join us from{" "}
+              {/* <span className="bg-purple-600  py-1 px-3 rounded-full hover:scale-105 ease-in-out duration-300">
+                <GradientText
+                  animationSpeed={4}
+                  showBorder={false}
+                  display="inline"
+                  className="font-bold"
+                  //TODO change colors here
+                  colors={["#00BFFF", "#7FFF00", "#FFD700"]}
+                >
+                  Feb 20 to 22,
+                </GradientText>
+              </span> */}
+              <div className="block md:inline bg-purple-600 bg-opacity-60 text-white text-3xl md:text-4xl py-1 px-3 rounded-full hover:scale-105 ease-in-out duration-300 backdrop-blur-md ">
+                20<sup>th</sup> to 22<sup>nd</sup> Feb 2025
+              </div>
             </h1>
             <h1 className="text-text-primary dark:text-dark-text-primary text-pretty text-center text-3xl sm:text-4xl md:text-5xl font-medium leading-none tracking-[-1.44px] md:max-w-screen-lg md:tracking-[-2.16px] text-white">
               where{" "}
-              <span className="text-[#7FFF00] font-bold">
+              <span className="font-bold">
                 <FlipWords words={words1} />
               </span>{" "}
               meets{" "}
@@ -64,9 +70,9 @@ const Hero = () => {
                 <FlipWords words={words2} />
               </span>
             </h1>
-            <h2 className="text-md text-text-tertiary dark:text-dark-text-tertiary max-w-2xl text-pretty text-center md:text-lg text-white">
+            {/* <h2 className="text-md text-text-tertiary dark:text-dark-text-tertiary max-w-2xl text-pretty text-center md:text-lg text-white">
               and unforgettable moments are made.
-            </h2>
+            </h2> */}
           </div>
         </div>
         <div className="dark:divide-dark-border flex items-start justify-center divide-y divide-black/10 px-8 sm:px-24">

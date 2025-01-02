@@ -6,7 +6,7 @@ import { TechEvents } from "./pages/TechEvents";
 import { NonTechEvents } from "./pages/NonTechEvents";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
-// import TeamMembersPage from "./pages/team-members-page";
+import TeamMembersPage from "./pages/team-members-page";
 import ProNight from "./pages/ProNight";
 
 function App() {
@@ -17,7 +17,7 @@ function App() {
         <Route path="/events" element={<ClubEvents />} />
         <Route path="/technical-events" element={<TechEvents />} />
         <Route path="/non-technical-events" element={<NonTechEvents />} />
-        {/* <Route path="/team" element={<TeamMembersPage />} /> */}
+        <Route path="/team" element={<TeamMembersPage />} />
         <Route path="/pro-night" element={<ProNight />} />
       </Routes>
       <ToastContainer

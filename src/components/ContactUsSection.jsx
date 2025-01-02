@@ -18,13 +18,13 @@ function ContactUsSection() {
       <GradientText
         animationSpeed={10}
         showBorder={false}
-        className="text-6xl py-16"
+        className="text-6xl mt-16"
       >
         CONTACT US
       </GradientText>
       <div className="bg-black">
         <div className="mx-auto max-w-7xl">
-          <div className="mx-auto max-w-7xl py-12 md:py-24">
+          <div className="mx-auto max-w-7xl py-8 md:py-10">
             <div className="grid items-center justify-items-center gap-4 md:gap-8 lg:gap-x-4 lg:gap-y-10 lg:grid-cols-2 overflow-x-hidden">
               {/* contact from */}
               <ContactForm />
