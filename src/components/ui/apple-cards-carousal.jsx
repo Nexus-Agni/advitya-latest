@@ -215,7 +215,7 @@ export const Card = ({ card, index, layout = false }) => {
       </AnimatePresence>
       <motion.button
         layoutId={layout ? `card-${card.title}` : undefined}
-        onClick={handleOpen}
+        onClick={handleClose}
         className="rounded-3xl bg-gray-100 dark:bg-neutral-900 
         h-56 md:h-96 w-56  md:w-96 overflow-hidden flex flex-col items-start justify-start relative z-10"
       >

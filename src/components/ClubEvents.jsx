@@ -64,7 +64,7 @@ export function ClubEvents() {
               <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[25rem] h-auto rounded-xl p-6 border-4 hover:border-purple-600 transition-all ease-in-out duration-300">
                 <CardItem
                   translateZ="50"
-                  className="text-xl font-bold text-neutral-600 dark:text-white"
+                  className="text-xl font-bold text-neutral-600 dark:text-white justify-self-center"
                 >
                   {card.title}
                 </CardItem>
@@ -83,7 +83,7 @@ export function ClubEvents() {
                     translateZ={20}
                     className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
                   >
-                    Know more →
+                    View more →
                   </CardItem>
                   </Link>
                 </div>

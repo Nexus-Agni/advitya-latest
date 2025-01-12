@@ -23,69 +23,59 @@ function Footer() {
   ];
 
   return (
-    <footer className="bg-gradient-to-br from-purple-500 to-indigo-500 text-white lg:grid lg:grid-cols-5">
-      <div className="relative lg:col-span-2 lg:h-full mx-auto flex justify-center items-center">
-        <img
-          src="https://res.cloudinary.com/dkjhkep0m/image/upload/v1735833324/Advitya25_logo_white_k5zfff.png"
-          alt="Advitya Logo"
-          className="h-[10rem] my-6 md:py-0 w-[16rem] md:h-[12rem] md:w-[14rem] "
-        />
-      </div>
-
-      <div className="px-4 py-8 sm:px-6 lg:col-span-3 lg:px-8">
-        <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-          <div>
-            <ul className="mt-4 flex gap-4 justify-center lg:justify-start">
-              {socialMediaLinks.map((link) => (
-                <li key={link.name}>
-                  <a
-                    href={link.href}
-                    rel="noreferrer"
-                    target="_blank"
-                    className="text-gray-200 transition hover:text-purple-600"
+    <footer className="bg-gradient-to-br from-purple-500 to-indigo-500 text-white p-6 lg:p-8">
+      <div className="lg:grid lg:grid-cols-5 lg:items-center">
+        {/* Logo and Social Icons */}
+        <div className="lg:col-span-2 flex flex-col items-center">
+          <img
+            src="https://res.cloudinary.com/dkjhkep0m/image/upload/v1734017705/Advitya25_logo_BLACK_abytzs.png"
+            alt="Advitya Logo"
+            className="h-24 w-40 md:h-32 md:w-48"
+          />
+          <ul className="mt-4 flex gap-4">
+            {socialMediaLinks.map((link) => (
+              <li key={link.name}>
+                <a
+                  href={link.href}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="text-gray-200 transition hover:text-purple-600"
+                >
+                  <span className="sr-only">{link.name}</span>
+                  <svg
+                    className="h-6 w-6"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                    aria-hidden="true"
                   >
-                    <span className="sr-only">{link.name}</span>
-                    <svg
-                      className="h-6 w-6"
-                      fill="currentColor"
-                      viewBox="0 0 24 24"
-                      aria-hidden="true"
-                    >
-                      <path d={link.svgPath} />
-                    </svg>
-                  </a>
-                </li>
-              ))}
-            </ul>
-          </div>
+                    <path d={link.svgPath} />
+                  </svg>
+                </a>
+              </li>
+            ))}
+          </ul>
+        </div>
 
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
-            <div>
-              <p>
-                <span className="text-xs uppercase tracking-wide text-black font-semibold">
-                  {" "}
-                  Contact us{" "}
-                </span>
-                <div className="text-lg">
-                  <p>Dr. Yogesh Shukla</p>
-                  <p>Convenor, AdVITya&apos;25</p>
-                  <p>advitya.convenor@vitbhopal.ac.in</p>
-                </div>
-              </p>
-            </div>
+        {/* Contact Section */}
+        <div className="lg:col-span-3 flex flex-col items-center justify-center lg:items-end">
+          <p className="text-xs uppercase font-semibold">Contact us</p>
+          <div className="text-lg text-center lg:text-right">
+            <p>Dr. Yogesh Shukla</p>
+            <p>Convenor, AdVITya&apos;25</p>
+            <p>advitya.convenor@vitbhopal.ac.in</p>
           </div>
         </div>
       </div>
 
-      <div className="lg:col-span-5 mt-8 border-t border-gray-100 pt-8">
-        <div className="flex justify-center items-center">
-          <p className="text-xs text-gray-200">
-            &copy; 2025. VIT Bhopal University. All rights reserved.
-          </p>
-        </div>
+      {/* Footer Bottom */}
+      <div className="mt-8 border-t border-gray-200 pt-4">
+        <p className="text-xs text-center text-gray-200">
+          &copy; 2025. VIT Bhopal University. All rights reserved.
+        </p>
       </div>
     </footer>
   );
 }
+
 
 export default Footer;

@@ -171,7 +171,8 @@ export function TechEvents() {
       
     // </div>
 
-    <div className="w-full h-screen">
+    <div className="w-full h-screen grid items-start content-center justify-items-center">
+      <RevealingSoon />
       <div className="flex items-center justify-start p-4">
           <button
             onClick={() =>
@@ -196,7 +197,6 @@ export function TechEvents() {
             Back
           </button>
       </div>
-      <RevealingSoon />
     </div>
   );
 }

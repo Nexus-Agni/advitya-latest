@@ -38,10 +38,21 @@ export default {
           "100%": { backgroundPosition: "0% 50%" },
         },
       },
+      // Add scrollbar styles here
+      scrollbar: {
+        track: {
+          borderRadius: '5px',
+          background: 'rgba(0, 0, 0, 0.05)', // Track color
+        },
+        thumb: {
+          borderRadius: '5px',
+          background: 'rgba(0, 0, 0, 0.2)', // Thumb color
+        },
+      },
     },
   },
   plugins: [
-    tailwindScrollbar,
+    tailwindScrollbar, // Include the tailwind-scrollbar plugin
     addVariablesForColors,
     function ({ matchUtilities, theme }) {
       matchUtilities(
