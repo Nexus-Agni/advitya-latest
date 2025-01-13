@@ -23,14 +23,14 @@ function Footer() {
   ];
 
   return (
-    <footer className="bg-gradient-to-br from-purple-500 to-indigo-500 text-white p-6 lg:p-8">
-      <div className="lg:grid lg:grid-cols-5 lg:items-center">
+    <footer className="bg-gradient-to-br from-purple-500 to-indigo-500 text-white px-6 lg:px-8 w-full">
+      <div className="flex flex-col space-y-6 md:space-y-0 md:flex-row mx-auto max-w-6xl justify-between items-center">
         {/* Logo and Social Icons */}
-        <div className="lg:col-span-2 flex flex-col items-center">
+        <div className="flex flex-col items-center">
           <img
-            src="https://res.cloudinary.com/dkjhkep0m/image/upload/v1734017705/Advitya25_logo_BLACK_abytzs.png"
+            src="https://res.cloudinary.com/dkjhkep0m/image/upload/v1736778859/AdVITya_25_Logo_White_ueqdjt.png"
             alt="Advitya Logo"
-            className="h-24 w-40 md:h-32 md:w-48"
+            className="h-40 md:h-60 "
           />
           <ul className="mt-4 flex gap-4">
             {socialMediaLinks.map((link) => (

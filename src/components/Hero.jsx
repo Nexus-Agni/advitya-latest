@@ -40,7 +40,7 @@ const Hero = () => {
             {/* <div >
               <img src="https://res.cloudinary.com/dkjhkep0m/image/upload/v1733809264/Advitya25_logo_yscnk6.png" alt="" className="h-[30rem] w-[30rem]"/>
             </div> */}
-            <img src="https://res.cloudinary.com/dkjhkep0m/image/upload/v1733809264/Advitya25_logo_yscnk6.png" alt="AdVITya Logo" className="md:h-[32rem] md:w-[30rem] h-[20rem] w-[20rem] "/>
+            <img src="https://res.cloudinary.com/dkjhkep0m/image/upload/v1736778723/AdVITya_25_Logo_swoz8h.png" alt="AdVITya Logo" className="md:h-[32rem]  h-[20rem]  "/>
             {/* <h2 className="text-text-primary dark:text-dark-text-primary text-pretty text-center text-3xl  md:text-4xl lg:text-[clamp(50px,7vw,75px)] font-medium leading-none tracking-[-1.44px] md:max-w-screen-lg md:tracking-[-2.16px] text-gray-200">20th - 22nd Feb, 2025</h2> */}
             <h1 className="text-text-primary dark:text-dark-text-primary text-pretty text-center text-3xl  md:text-5xl  font-medium leading-none tracking-[-1.44px] md:max-w-screen-lg md:tracking-[-2.16px] text-gray-200">
               Join us from{" "}
