@@ -174,7 +174,8 @@ export function NonTechEvents() {
       //   <FocusCards cards={nonTechnicalEvents} setActive={setActive} />
       // </div>
 
-      <div className="w-full h-screen">
+      <div className="w-full h-screen grid items-start content-center justify-items-center">
+        <RevealingSoon />
       <div className="flex items-center justify-start p-4">
           <button
             onClick={() =>
@@ -199,7 +200,7 @@ export function NonTechEvents() {
             Back
           </button>
       </div>
-      <RevealingSoon />
+      
     </div>
   );
 }

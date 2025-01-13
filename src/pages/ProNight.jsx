@@ -4,7 +4,8 @@ import RevealingSoon from "../components/ui/RevealingSoon";
 function ProNight() {
   const navigate = useNavigate()
   return (
-    <div className="w-full h-screen">
+    <div className="w-full h-screen grid items-start content-center justify-items-center">
+      <RevealingSoon />
       <div className="flex items-center justify-start p-4">
           <button
             onClick={() =>
@@ -29,7 +30,7 @@ function ProNight() {
             Back
           </button>
       </div>
-      <RevealingSoon />
+      
     </div>
   );
 }
