@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { cn } from "../../utils/cn";
 import { Link } from "react-router-dom";
+import { ArrowRight } from "lucide-react";
 
 export const Card = React.memo(
   ({ card, index, hovered, setHovered, setActive }) => (
@@ -25,8 +26,19 @@ export const Card = React.memo(
           hovered === index ? "opacity-100" : "opacity-0"
         )}
       >
-        <div className="text-xl md:text-2xl font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-200">
-          {card.title}
+        <div className="flex flex-col">
+          <div className="text-xl md:text-2xl font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-200">
+            {card.title}
+          </div>
+          <div className="text-lg  font-medium bg-clip-text text-transparent bg-gradient-to-b from-neutral-50 to-neutral-200">
+            {card.clubName}
+          </div>
+          <div>
+            <div className="text-sm font-medium bg-clip-text text-transparent bg-gradient-to-b from-purple-500 to-purple-200">
+              View more
+              <ArrowRight className="w-3 h-3" />
+            </div>
+          </div>
         </div>
       </div>
     </div>
