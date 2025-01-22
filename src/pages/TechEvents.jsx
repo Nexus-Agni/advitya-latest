@@ -28,7 +28,11 @@ export function TechEvents() {
           ctaLinkExternal: event.ExternalRegistration,
           ctaLinkInternal: event.InternalRegistration,
           venue: event.Venue,
-          date: new Date(event.DateAndTime).toLocaleDateString(),
+          date: new Date(event.DateAndTime).toLocalDateString(),
+          time: new Date(event.DateAndTime).toLocaleTimeString([], {
+            hour: "2-digit",
+            minute: "2-digit",
+          }),
           entryFees: event.EntryFee,
           eventDescription: () => <p>{event.EventDescription}</p>,
         }));
@@ -166,6 +170,7 @@ export function TechEvents() {
                           </div>
                           <div className="flex">
                             <Calendar className="w-4 h-4 " /> {active.date}
+                            {active.time}
                           </div>
                           <div className="flex">
                             <IndianRupee className="w-4 h-4" />
@@ -185,6 +190,14 @@ export function TechEvents() {
                       {dropdownOpen && (
                         <div className="absolute right-0 mt-2 w-48 bg-purple-500   rounded-md shadow-lg z-20">
                           <a
+                            href={active.ctaLinkInternal}
+                            target="_blank"
+                            className="block px-4 py-2 text-sm text-white
+                            hover:bg-purple-800"
+                          >
+                            Internal Registration
+                          </a>
+                          <a
                             href={active.ctaLinkExternal}
                             target="_blank"
                             className="block px-4 py-2 text-sm 
@@ -192,14 +205,6 @@ export function TechEvents() {
                             hover:bg-purple-800"
                           >
                             External Registration
-                          </a>
-                          <a
-                            href={active.ctaLinkInternal}
-                            target="_blank"
-                            className="block px-4 py-2 text-sm text-white
-                            hover:bg-purple-800"
-                          >
-                            Internal Registration
                           </a>
                         </div>
                       )}
