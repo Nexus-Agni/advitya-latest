@@ -20,22 +20,31 @@ export function TechEvents() {
     async function fetchTechEvents() {
       try {
         const events = await dbService.getTechEvents();
-        const transformedEvents = events.map((event) => ({
-          title: event.EventName,
-          clubName: event.ClubName,
-          src: event.EventImage,
-          ctaText: "Register",
-          ctaLinkExternal: event.ExternalRegistration,
-          ctaLinkInternal: event.InternalRegistration,
-          venue: event.Venue,
-          date: new Date(event.DateAndTime).toLocalDateString(),
-          time: new Date(event.DateAndTime).toLocaleTimeString([], {
-            hour: "2-digit",
-            minute: "2-digit",
-          }),
-          entryFees: event.EntryFee,
-          eventDescription: () => <p>{event.EventDescription}</p>,
-        }));
+        const transformedEvents = events
+          .map((event) => ({
+            title: event.EventName,
+            clubName: event.ClubName,
+            src: event.EventImage,
+            ctaText: "Register",
+            ctaLinkInternal: event.InternalRegistration,
+            ctaLinkExternal: event.ExternalRegistration,
+            venue: event.Venue,
+            date: new Date(event.EventDate).toLocaleDateString(),
+            time: new Date(
+              `1970-01-01T${event.EventTime.slice(
+                0,
+                2
+              )}:${event.EventTime.slice(2, 4)}:00`
+            ).toLocaleTimeString([], {
+              hour: "2-digit",
+              minute: "2-digit",
+              hour12: false,
+            }),
+            entryFees: event.EntryFee,
+            rank: event.Rank,
+            eventDescription: () => <p>{event.EventDescription}</p>,
+          }))
+          .sort((a, b) => a.rank - b.rank);
         setTechnicalEvents(transformedEvents);
       } catch (error) {
         console.error("Error fetching technical events:", error);
