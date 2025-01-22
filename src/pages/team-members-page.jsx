@@ -103,7 +103,7 @@ export default function TeamMembersPage() {
           Back
         </button>
       </div>
-      {/* <div className="max-w-7xl mx-auto">
+      <div className="max-w-7xl mx-auto">
         <h1 className="text-4xl font-bold text-center mb-12 text-purple-400">The Creative Minds Behind AdVITya'25</h1>
         
         <section className="mb-16">
@@ -138,10 +138,10 @@ export default function TeamMembersPage() {
           <h2 className="text-3xl font-bold mb-8 text-purple-300 text-center">Student Organisers</h2>
           <LeadershipSection members={studentOrganisers} showImage={false} />
         </section>
-      </div> */}
-      <div className='h-full w-full'>
-      <RevealingSoon />
       </div>
+      {/* <div className='h-full w-full'>
+      <RevealingSoon />
+      </div> */}
     </div>
   )
 }
