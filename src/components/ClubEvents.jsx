@@ -21,12 +21,17 @@ export function ClubEvents() {
       src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1733300780/Pro-Show.jpg",
       link: "/pro-night",
     },
+    {
+      title: "MP's Pride",
+      src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1733300780/Non-Tech.jpg",
+      link: "/mp-pride",
+    },
   ];
 
   return (
     <>
       <div className="bg-zinc-950 h-full w-full">
-        <div className="flex items-center justify-start p-4 ">
+        <div className="flex items-center justify-start p-4">
           <button
             onClick={() => navigate("/", { state: { from: "ClubEvents" } })}
             className="text-white bg-purple-600 py-2 px-4 rounded-lg hover:scale-105 ease-in-out duration-300 flex items-center"
@@ -48,7 +53,7 @@ export function ClubEvents() {
             Back
           </button>
         </div>
-        <div className="my-2 ">
+        <div className="my-2">
           <GradientText
             animationSpeed={5}
             showBorder={false}
@@ -58,10 +63,11 @@ export function ClubEvents() {
           </GradientText>
         </div>
 
-        <div className="flex flex-wrap justify-center items-center gap-5 max-w-full mx-auto md:px-8 w-full ">
+        {/* Cards Container */}
+        <div className="flex flex-nowrap items-center justify-center gap-5 px-8 mx-auto max-w-[90%]">
           {cards.map((card, index) => (
             <CardContainer key={index} className="inter-var">
-              <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[25rem] h-auto rounded-xl p-6 border-4 hover:border-purple-600 transition-all ease-in-out duration-300">
+              <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-[20rem] h-auto rounded-xl p-6 border-4 hover:border-purple-600 transition-all ease-in-out duration-300">
                 <CardItem
                   translateZ="50"
                   className="text-xl font-bold text-neutral-600 dark:text-white justify-self-center"
@@ -79,12 +85,12 @@ export function ClubEvents() {
                 </CardItem>
                 <div className="flex justify-center items-center mt-20">
                   <Link to={card.link}>
-                  <CardItem
-                    translateZ={20}
-                    className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
-                  >
-                    View more →
-                  </CardItem>
+                    <CardItem
+                      translateZ={20}
+                      className="px-4 py-2 rounded-xl bg-black dark:bg-white dark:text-black text-white text-xs font-bold"
+                    >
+                      View more →
+                    </CardItem>
                   </Link>
                 </div>
               </CardBody>

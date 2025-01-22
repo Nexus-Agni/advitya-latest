@@ -8,6 +8,7 @@ import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import TeamMembersPage from "./pages/team-members-page";
 import ProNight from "./pages/ProNight";
+import MpPride from "./pages/mppride";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
         <Route path="/non-technical-events" element={<NonTechEvents />} />
         <Route path="/team" element={<TeamMembersPage />} />
         <Route path="/pro-night" element={<ProNight />} />
+        <Route path="/mp-pride" element={<MpPride />} />
       </Routes>
       <ToastContainer
         position="top-right"
