@@ -23,7 +23,7 @@ export function ClubEvents() {
     },
     {
       title: "MP's Pride",
-      src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1733300780/Non-Tech.jpg",
+      src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1737629712/111_nijcqy.png",
       link: "/mp-pride",
     },
   ];

@@ -9,77 +9,77 @@ export default function Mppride() {
     {
       name: "Mr. Kapil Parmar",
       designation: "Paralympic Medallist",
-      src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1733300780/Tech.jpg",
+      src: "https://res.cloudinary.com/dkjhkep0m/image/upload/c_pad,w_896,h_1195,ar_3:4/v1737625491/Kapil_entjiy.png",
     },
     {
       name: " Mrs. Bhuri Bai",
       designation: "Padma Shri (Art)",
-      src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1733300780/Non-Tech.jpg",
+      src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1737626212/2_r13j1w.png",
     },
     {
       name: "Mr. Purushottam Dadeech",
       designation: "Padma Shri (Dance)",
-      src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1733300780/Pro-Show.jpg",
+      src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1737626245/3_udvxdm.png",
     },
     {
         name: "Mr. Satendra Lohiya",
         designation: "Padma Shri (Sports)",
-        src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1733300780/Pro-Show.jpg",
+        src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1737626259/4_lw0zzg.png",
       },   
        {
         name: "Mr. Banwari Lal ",
         designation: "Padma Shri (Environment)",
-        src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1733300780/Pro-Show.jpg",
+        src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1737626279/5_ialmzt.png",
       },  
         {
         name: "Mrs. Durgabai Vyam",
         designation: "Padma Shri (Art)",
-        src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1733300780/Pro-Show.jpg",
+        src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1737626263/6_imcf8f.png",
       },
       {
         name: "Mr. Bhagwatilal Rajpurohit",
         designation: "Padma Shri (Literature)",
-        src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1733300780/Pro-Show.jpg",
+        src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1737626268/7_fpfesx.png",
       },
       {
         name: " Mr. Kaluram Bamaniya",
         designation: "Padma Shri (Art)",
-        src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1733300780/Pro-Show.jpg",
+        src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1737626292/12_srfmz1.png",
       },
       {
         name: " Shri Bhajju Shyam",
         designation: "Padma Shri (Literature)",
-        src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1733300780/Pro-Show.jpg",
+        src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1737626290/13_on4bki.png",
       },
       {
         name: "Dr. Munishwar Dawar",
         designation: "Padma Shri (Medicine)",
-        src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1733300780/Pro-Show.jpg",
+        src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1737626281/14_a1sudn.png",
       },
       {
         name: "Master Avinish Tiwari",
         designation: "P.M Rashtriya Bal Puraskar",
-        src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1733300780/Pro-Show.jpg",
+        src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1737626293/15_aoyoht.png",
       },
       {
         name: "Ms. Rubina Francis",
         designation: "Paralympic Medallist",
-        src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1733300780/Pro-Show.jpg",
+        src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1737626267/8_bljbg0.png",
       },
       {
         name: "Mr. Aishwarya Singh",
         designation: "Arjuna Awardee (Shooting)",
-        src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1733300780/Pro-Show.jpg",
+        src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1737626253/9_uimd9m.png",
       },
       {
         name: "Dr. Kapil Tiwari",
         designation: "Padma Shri (Education)",
-        src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1733300780/Pro-Show.jpg",
+        src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1737626283/11_hmf0op.png",
       },
       {
         name: "Ms. Varsha Varman",
         designation: "Asian Games Medallist",
-        src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1733300780/Pro-Show.jpg",
+        src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1737626272/10_pazobg.png",
       },
   ];
 
@@ -117,17 +117,17 @@ export default function Mppride() {
             MP's Pride
           </GradientText>
         </div>
-
+  
         <div className="flex flex-wrap justify-center items-center gap-5 max-w-full mx-auto md:px-8 w-full">
           {cards.map((card, index) => (
             <CardContainer key={index} className="inter-var">
               <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[25rem] h-auto rounded-xl p-6 border-4 hover:border-purple-600 transition-all ease-in-out duration-300 flex flex-col items-center">
-                <div className="w-full">
+                <div className="w-full flex justify-center">
                   <img
                     src={card.src}
                     height="1000"
                     width="1000"
-                    className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                    className="h-61 w-60 object-cover rounded-xl group-hover/card:shadow-xl"
                     alt={card.name}
                   />
                 </div>
@@ -145,5 +145,5 @@ export default function Mppride() {
         </div>
       </div>
     </>
-  );
+  );  
 }
