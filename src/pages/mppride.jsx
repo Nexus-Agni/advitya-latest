@@ -9,77 +9,77 @@ export default function Mppride() {
     {
       name: "Mr. Kapil Parmar",
       designation: "Paralympic Medallist",
-      src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1733300780/Tech.jpg",
+      src: "https://res.cloudinary.com/dkjhkep0m/image/upload/c_pad,w_896,h_1195,ar_3:4/v1737625491/Kapil_entjiy.png",
     },
     {
       name: " Mrs. Bhuri Bai",
       designation: "Padma Shri (Art)",
-      src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1733300780/Non-Tech.jpg",
+      src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1737626212/2_r13j1w.png",
     },
     {
       name: "Mr. Purushottam Dadeech",
       designation: "Padma Shri (Dance)",
-      src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1733300780/Pro-Show.jpg",
+      src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1737626245/3_udvxdm.png",
     },
     {
         name: "Mr. Satendra Lohiya",
         designation: "Padma Shri (Sports)",
-        src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1733300780/Pro-Show.jpg",
+        src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1737626259/4_lw0zzg.png",
       },   
        {
         name: "Mr. Banwari Lal ",
         designation: "Padma Shri (Environment)",
-        src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1733300780/Pro-Show.jpg",
+        src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1737626279/5_ialmzt.png",
       },  
         {
         name: "Mrs. Durgabai Vyam",
         designation: "Padma Shri (Art)",
-        src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1733300780/Pro-Show.jpg",
+        src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1737626263/6_imcf8f.png",
       },
       {
         name: "Mr. Bhagwatilal Rajpurohit",
         designation: "Padma Shri (Literature)",
-        src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1733300780/Pro-Show.jpg",
+        src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1737626268/7_fpfesx.png",
       },
       {
         name: " Mr. Kaluram Bamaniya",
         designation: "Padma Shri (Art)",
-        src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1733300780/Pro-Show.jpg",
+        src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1737626292/12_srfmz1.png",
       },
       {
         name: " Shri Bhajju Shyam",
         designation: "Padma Shri (Literature)",
-        src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1733300780/Pro-Show.jpg",
+        src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1737626290/13_on4bki.png",
       },
       {
         name: "Dr. Munishwar Dawar",
         designation: "Padma Shri (Medicine)",
-        src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1733300780/Pro-Show.jpg",
+        src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1737626281/14_a1sudn.png",
       },
       {
         name: "Master Avinish Tiwari",
         designation: "P.M Rashtriya Bal Puraskar",
-        src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1733300780/Pro-Show.jpg",
+        src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1737626293/15_aoyoht.png",
       },
       {
         name: "Ms. Rubina Francis",
         designation: "Paralympic Medallist",
-        src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1733300780/Pro-Show.jpg",
+        src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1737626267/8_bljbg0.png",
       },
       {
         name: "Mr. Aishwarya Singh",
         designation: "Arjuna Awardee (Shooting)",
-        src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1733300780/Pro-Show.jpg",
+        src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1737626253/9_uimd9m.png",
       },
       {
         name: "Dr. Kapil Tiwari",
         designation: "Padma Shri (Education)",
-        src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1733300780/Pro-Show.jpg",
+        src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1737626283/11_hmf0op.png",
       },
       {
         name: "Ms. Varsha Varman",
         designation: "Asian Games Medallist",
-        src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1733300780/Pro-Show.jpg",
+        src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1737626272/10_pazobg.png",
       },
   ];
 
