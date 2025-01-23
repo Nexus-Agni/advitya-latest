@@ -117,17 +117,17 @@ export default function Mppride() {
             MP's Pride
           </GradientText>
         </div>
-
+  
         <div className="flex flex-wrap justify-center items-center gap-5 max-w-full mx-auto md:px-8 w-full">
           {cards.map((card, index) => (
             <CardContainer key={index} className="inter-var">
               <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-auto sm:w-[25rem] h-auto rounded-xl p-6 border-4 hover:border-purple-600 transition-all ease-in-out duration-300 flex flex-col items-center">
-                <div className="w-full">
+                <div className="w-full flex justify-center">
                   <img
                     src={card.src}
                     height="1000"
                     width="1000"
-                    className="h-60 w-full object-cover rounded-xl group-hover/card:shadow-xl"
+                    className="h-61 w-60 object-cover rounded-xl group-hover/card:shadow-xl"
                     alt={card.name}
                   />
                 </div>
@@ -145,5 +145,5 @@ export default function Mppride() {
         </div>
       </div>
     </>
-  );
+  );  
 }
