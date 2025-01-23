@@ -42,8 +42,7 @@ export default function TeamMembersPage() {
     async function fetchData() {
       try {
         const facultyData = await dbService.getFacultyOrganisers();
-        const sortedFaculty = facultyData.sort((a, b) => a.rank - b.rank);
-        const updatedFaculty = sortedFaculty.map((member) => ({
+        const updatedFaculty = facultyData.map((member) => ({
           ...member,
           name: member.Name,
           position: member.Team,
@@ -51,8 +50,7 @@ export default function TeamMembersPage() {
         setFacultyOrganisers(updatedFaculty);
 
         // const studentData = await dbService.getStudentOrganisers();
-        // const sortedStudent = studentData.sort((a, b) => a.rank - b.rank);
-        // const updatedStudent = sortedStudent.map((member) => ({
+        // const updatedStudent = studentData.map((member) => ({
         //   ...member,
         //   name: member.Name,
         //   position: member.Team,
