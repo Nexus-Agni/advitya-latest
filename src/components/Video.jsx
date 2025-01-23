@@ -56,9 +56,9 @@ export const Video = () => {
           WebkitBackgroundClip: "text",
           WebkitTextFillColor: "transparent",
         }}
-        className="max-w-7xl pl-4 mx-auto text-2xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans hidden md:block"
+        className="max-w-7xl pl-4 mx-auto text-2xl md:text-5xl font-bold text-neutral-800 dark:text-neutral-200 font-sans hidden md:block capitalize"
       >
-        AdVITya&apos;24 Glimpses.
+        AdVITya&apos;24 GLIMPSES.
       </h2>
       <br />
       <br />
