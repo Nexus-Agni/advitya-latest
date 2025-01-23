@@ -178,7 +178,7 @@ export function TechEvents() {
                             <MapPin className="w-4 h-4" /> {active.venue}
                           </div>
                           <div className="flex">
-                            <Calendar className="w-4 h-4 " /> {active.date}
+                            <Calendar className="w-4 h-4 " /> {active.date},{" "}
                             {active.time}
                           </div>
                           <div className="flex">
