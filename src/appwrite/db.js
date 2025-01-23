@@ -3,6 +3,8 @@ import {
   DATABASE_ID,
   COLLECTION_ID_TECH,
   COLLECTION_ID_NONTECH,
+  COLLECTION_ID_FACULTY_ORGANISERS,
+  COLLECTION_ID_STUDENT_ORGANISERS,
 } from "../utils/config.js";
 
 export const dbService = {
@@ -28,6 +30,32 @@ export const dbService = {
       return response.documents;
     } catch (error) {
       console.error("Error fetching non-tech events:", error);
+      throw error;
+    }
+  },
+
+  getFacultyOrganisers: async () => {
+    try {
+      const response = await database.listDocuments(
+        DATABASE_ID,
+        COLLECTION_ID_FACULTY_ORGANISERS
+      );
+      return response.documents;
+    } catch (error) {
+      console.error("Error fetching faculty organisers:", error);
+      throw error;
+    }
+  },
+
+  getStudentOrganisers: async () => {
+    try {
+      const response = await database.listDocuments(
+        DATABASE_ID,
+        COLLECTION_ID_STUDENT_ORGANISERS
+      );
+      return response.documents;
+    } catch (error) {
+      console.error("Error fetching student organisers:", error);
       throw error;
     }
   },
