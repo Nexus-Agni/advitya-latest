@@ -30,7 +30,12 @@ export function NonTechEvents() {
             ctaLinkExternal: event.ExternalRegistration,
             venue: event.Venue,
             date: new Date(event.EventDate).toLocaleDateString(),
-            time: new Date(`1970-01-01T${event.EventTime.slice(0, 2)}:${event.EventTime.slice(2, 4)}:00`).toLocaleTimeString([], {
+            time: new Date(
+              `1970-01-01T${event.EventTime.slice(
+                0,
+                2
+              )}:${event.EventTime.slice(2, 4)}:00`
+            ).toLocaleTimeString([], {
               hour: "2-digit",
               minute: "2-digit",
               hour12: false,
@@ -219,10 +224,11 @@ export function NonTechEvents() {
                   <div className="pt-4 relative px-4">
                     <CustomScrollbar className="text-neutral-600 text-sm md:text-base lg:text-lg h-40 md:h-fit pb-10 flex flex-col items-start gap-4 overflow-auto dark:text-neutral-400">
                       {typeof active.eventDescription === "function" ? (
-                        <div>{active.eventDescription()}</div>
+                        <div className="pb-4">{active.eventDescription()}</div>
                       ) : (
                         active.eventDescription
                       )}
+                      <div className="pb-4"></div>
                     </CustomScrollbar>
                   </div>
                 </div>
