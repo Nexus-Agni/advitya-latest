@@ -5,6 +5,7 @@ import {
   COLLECTION_ID_NONTECH,
   COLLECTION_ID_FACULTY_ORGANISERS,
   COLLECTION_ID_STUDENT_ORGANISERS,
+  COLLECTION_ID_KEY_HIGHLIGHTS, // Add this line
 } from "../utils/config.js";
 
 export const dbService = {
@@ -56,6 +57,18 @@ export const dbService = {
       return response.documents;
     } catch (error) {
       console.error("Error fetching student organisers:", error);
+      throw error;
+    }
+  },
+  getKeyHighlights: async () => {
+    try {
+      const response = await database.listDocuments(
+        DATABASE_ID,
+        COLLECTION_ID_KEY_HIGHLIGHTS // Use the correct collection ID
+      );
+      return response.documents;
+    } catch (error) {
+      console.error("Error fetching key highlights:", error);
       throw error;
     }
   },
