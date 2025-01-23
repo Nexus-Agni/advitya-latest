@@ -20,6 +20,8 @@ export function TechEvents() {
     async function fetchTechEvents() {
       try {
         const events = await dbService.getTechEvents();
+        console.log("Events:", events);
+        
         const transformedEvents = events
           .map((event) => ({
             title: event.EventName,
@@ -44,7 +46,6 @@ export function TechEvents() {
             rank: event.Rank,
             eventDescription: () => <p>{event.EventDescription}</p>,
           }))
-          .sort((a, b) => a.rank - b.rank);
         setTechnicalEvents(transformedEvents);
       } catch (error) {
         console.error("Error fetching technical events:", error);

@@ -8,12 +8,15 @@ import {
   COLLECTION_ID_KEY_HIGHLIGHTS, // Add this line
 } from "../utils/config.js";
 
+import { Query } from "appwrite";
+
 export const dbService = {
   getTechEvents: async () => {
     try {
       const response = await database.listDocuments(
         DATABASE_ID,
-        COLLECTION_ID_TECH
+        COLLECTION_ID_TECH, 
+        [Query.limit(100), Query.orderAsc("Rank")]
       );
       return response.documents;
     } catch (error) {
@@ -26,7 +29,8 @@ export const dbService = {
     try {
       const response = await database.listDocuments(
         DATABASE_ID,
-        COLLECTION_ID_NONTECH
+        COLLECTION_ID_NONTECH,
+        [Query.limit(100), Query.orderAsc("Rank")]
       );
       return response.documents;
     } catch (error) {
@@ -39,7 +43,8 @@ export const dbService = {
     try {
       const response = await database.listDocuments(
         DATABASE_ID,
-        COLLECTION_ID_FACULTY_ORGANISERS
+        COLLECTION_ID_FACULTY_ORGANISERS,
+        [Query.limit(100), Query.orderAsc("Rank")]
       );
       return response.documents;
     } catch (error) {
@@ -52,7 +57,8 @@ export const dbService = {
     try {
       const response = await database.listDocuments(
         DATABASE_ID,
-        COLLECTION_ID_STUDENT_ORGANISERS
+        COLLECTION_ID_STUDENT_ORGANISERS,
+        [Query.limit(100), Query.orderAsc("Rank")]
       );
       return response.documents;
     } catch (error) {
@@ -64,7 +70,8 @@ export const dbService = {
     try {
       const response = await database.listDocuments(
         DATABASE_ID,
-        COLLECTION_ID_KEY_HIGHLIGHTS // Use the correct collection ID
+        COLLECTION_ID_KEY_HIGHLIGHTS,
+        [Query.limit(100), Query.orderAsc("Rank")] 
       );
       return response.documents;
     } catch (error) {

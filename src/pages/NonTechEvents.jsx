@@ -44,7 +44,6 @@ export function NonTechEvents() {
             rank: event.Rank,
             eventDescription: () => <p>{event.EventDescription}</p>,
           }))
-          .sort((a, b) => a.rank - b.rank);
         setNonTechnicalEvents(transformedEvents);
       } catch (error) {
         console.error("Error fetching non-technical events:", error);

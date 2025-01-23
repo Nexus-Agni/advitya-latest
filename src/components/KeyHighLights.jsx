@@ -13,6 +13,7 @@ export function KeyHighlights() {
     const fetchHighlights = async () => {
       try {
         const data = await dbService.getKeyHighlights();
+        console.log(data);
         const formattedData = data.map((item) => ({
           category: item.Information,
           title: item.Title,
