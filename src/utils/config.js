@@ -1,18 +1,13 @@
 import { Client, Databases } from "appwrite";
 
-export const API_ENDPOINT = import.meta.env.VITE_APPWRITE_URL;
-export const PROJECT_ID = import.meta.env.VITE_APPWRITE_PROJECT_ID;
-export const DATABASE_ID = import.meta.env.VITE_APPWRITE_DATABASE_ID;
-export const COLLECTION_ID_TECH = import.meta.env
-  .VITE_APPWRITE_COLLECTION_ID_TECH;
-export const COLLECTION_ID_NONTECH = import.meta.env
-  .VITE_APPWRITE_COLLECTION_ID_NONTECH;
-export const COLLECTION_ID_FACULTY_ORGANISERS = import.meta.env
-  .VITE_APPWRITE_COLLECTION_ID_FACULTY_ORGANISERS;
-export const COLLECTION_ID_STUDENT_ORGANISERS = import.meta.env
-  .VITE_APPWRITE_COLLECTION_ID_STUDENT_ORGANISERS;
-export const COLLECTION_ID_KEY_HIGHLIGHTS = import.meta.env
-  .VITE_APPWRITE_COLLECTION_ID_KEY_HIGHLIGHTS;
+export const API_ENDPOINT = "https://cloud.appwrite.io/v1";
+export const PROJECT_ID = "6756a8dc000c0d24754b";
+export const DATABASE_ID = "6756a8ee002bdaddd989";
+export const COLLECTION_ID_TECH = "6756ac98003c63ae3080";
+export const COLLECTION_ID_NONTECH = "6756aca4000184c4bc55";
+export const COLLECTION_ID_FACULTY_ORGANISERS = "6791101d00032a5ba364";
+export const COLLECTION_ID_STUDENT_ORGANISERS = "6791103e000e9491aba4";
+export const COLLECTION_ID_KEY_HIGHLIGHTS = "6790da620032dac5f16b";
 
 const client = new Client().setEndpoint(API_ENDPOINT).setProject(PROJECT_ID);
 
