@@ -35,7 +35,7 @@ const LeadershipSection = ({ title, members, showImage = true }) => (
 
 export default function TeamMembersPage() {
   const [facultyOrganisers, setFacultyOrganisers] = useState([]);
-  // const [studentOrganisers, setStudentOrganisers] = useState([]);
+  const [studentOrganisers, setStudentOrganisers] = useState([]);
   const navigate = useNavigate();
 
   useEffect(() => {
@@ -49,13 +49,13 @@ export default function TeamMembersPage() {
         }));
         setFacultyOrganisers(updatedFaculty);
 
-        // const studentData = await dbService.getStudentOrganisers();
-        // const updatedStudent = studentData.map((member) => ({
-        //   ...member,
-        //   name: member.Name,
-        //   position: member.Team,
-        // }));
-        // setStudentOrganisers(updatedStudent);
+        const studentData = await dbService.getStudentOrganisers();
+        const updatedStudent = studentData.map((member) => ({
+          ...member,
+          name: member.Name,
+          position: member.Team,
+        }));
+        setStudentOrganisers(updatedStudent);
       } catch (error) {
         console.error("Error fetching organisers:", error);
       }
@@ -175,12 +175,12 @@ export default function TeamMembersPage() {
           <LeadershipSection members={facultyOrganisers} showImage={false} />
         </section>
 
-        {/* <section>
+        <section>
           <h2 className="text-3xl font-bold mb-8 text-purple-300 text-center">
             Student Organisers
           </h2>
           <LeadershipSection members={studentOrganisers} showImage={false} />
-        </section> */}
+        </section>
       </div>
     </div>
   );
