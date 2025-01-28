@@ -74,7 +74,7 @@ export default function Mppride() {
     {
       name: "Mr. Maaheen Jaiswal",
       designation: "Google Delegate",
-      src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1738047985/maheen-jaiswal.jpg",
+      src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1738084607/maheen-jaiswal.jpg",
     },
   ];
 
