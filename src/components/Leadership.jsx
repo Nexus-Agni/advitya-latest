@@ -27,6 +27,11 @@ export function Leadership() {
       img: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1733299177/vc.jpg",
     },
     {
+      title: "Prof. T. B. Sridharan",
+      description: "Pro-Vice Chancellor",
+      img: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1738047106/pro-vc.jpg",
+    },
+    {
       title: "KK Nair",
       description: "Registrar",
       img: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1733751658/registrar.jpg",
@@ -54,7 +59,7 @@ export function Leadership() {
           <Link to="/team">
             <button className="text-white text-xl bg-purple-600 py-2 px-5 rounded-lg hover:bg-purple-800 ease-in-out duration-300">
               <div className="flex gap-1">
-              Meet Our Team <ArrowRight size={24} />
+                Meet Our Team <ArrowRight size={24} />
               </div>
             </button>
           </Link>

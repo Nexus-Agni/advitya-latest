@@ -94,6 +94,15 @@ export default function TeamMembersPage() {
         "https://res.cloudinary.com/dkjhkep0m/image/upload/v1733299177/vc.jpg",
     },
     {
+      name: "Prof. T. B. Sridharan",
+      position: "Pro-Vice Chancellor",
+      image:
+        "https://res.cloudinary.com/dkjhkep0m/image/upload/v1738047106/pro-vc.jpg",
+    },
+  ];
+
+  const registrar = [
+    {
       name: "KK Nair",
       position: "Registrar",
       image:
@@ -152,6 +161,7 @@ export default function TeamMembersPage() {
           </h2>
           <LeadershipSection members={vicePresidents} showImage={true} />
           <LeadershipSection members={administration} showImage={true} />
+          <LeadershipSection members={registrar} showImage={true} />
         </section>
 
         <section className="mb-16">
