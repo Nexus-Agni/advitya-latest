@@ -17,7 +17,7 @@ export default function Mppride() {
       src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1737626212/2_r13j1w.png",
     },
     {
-      name: "Mr. Purushottam Dadeech",
+      name: "Dr. Purushottam Dadheech",
       designation: "Padma Shri (Dance)",
       src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1737626245/3_udvxdm.png",
     },
@@ -57,7 +57,7 @@ export default function Mppride() {
       src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1737626281/14_a1sudn.png",
     },
     {
-      name: "Master Avinish Tiwari",
+      name: "Master Avnish Tiwari",
       designation: "P.M Rashtriya Bal Puraskar",
       src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1737626293/15_aoyoht.png",
     },
@@ -74,7 +74,7 @@ export default function Mppride() {
     {
       name: "Mr. Maaheen Jaiswal",
       designation: "Google Delegate",
-      src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1738084607/maheen-jaiswal.jpg",
+      src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1738134315/WhatsApp_Image_2025-01-29_at_12.31.25_erqz9m.jpg",
     },
   ];
 
@@ -109,7 +109,7 @@ export default function Mppride() {
             showBorder={false}
             className="md:text-8xl text-5xl"
           >
-            MP's Pride
+            MP Gaurav
           </GradientText>
         </div>
 

@@ -22,7 +22,7 @@ export function ClubEvents() {
       link: "/pro-night",
     },
     {
-      title: "MP's Pride",
+      title: "MP Gaurav",
       src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1737629712/111_nijcqy.png",
       link: "/mp-pride",
     },
