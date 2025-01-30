@@ -39,6 +39,7 @@ export default function TeamMembersPage() {
   const navigate = useNavigate();
 
   useEffect(() => {
+    window.scrollTo(0, 0);
     async function fetchData() {
       try {
         const facultyData = await dbService.getFacultyOrganisers();

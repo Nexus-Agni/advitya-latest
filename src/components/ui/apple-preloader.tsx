@@ -1,10 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { BackgroundBeamsWithCollision } from "../ui/background-beams-with-collision";
 import { Countdown } from "../Countdown";
 
 export default function BackgroundBeamsWithCollisionDemo() {
 
   const targetDate = new Date('2025-02-20T08:00:00');
+  useEffect(() => {
+    // Function to preload other pages
+    const preloadPages = async () => {
+      // Preload the team-members-page
+      await import("../../pages/mppride");
+      await import("../../pages/TechEvents");
+      await import("../../pages/NonTechEvents");
+      await import("../../pages/ProNight");
+      await import("../../pages/team-members-page");
+      await import("../../pages/Home");
+    };
+    preloadPages();
+  }, []); 
+
   return (
     (<BackgroundBeamsWithCollision className={"h-screen"}>
       <h2
