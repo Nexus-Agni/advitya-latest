@@ -9,72 +9,72 @@ export default function Mppride() {
     {
       name: "Mr. Kapil Parmar",
       designation: "Paralympic Medallist",
-      src: "https://res.cloudinary.com/dkjhkep0m/image/upload/c_pad,w_896,h_1195,ar_3:4/v1737625491/Kapil_entjiy.png",
+      src: "https://cloud.appwrite.io/v1/storage/buckets/67a0557c003c575360a3/files/67a05a7e003cddb5e532/view?project=6756a8dc000c0d24754b&mode=admin",
     },
     {
       name: "Mrs. Bhuri Bai",
       designation: "Padma Shri (Art)",
-      src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1737626212/2_r13j1w.png",
+      src: "https://cloud.appwrite.io/v1/storage/buckets/67a0557c003c575360a3/files/67a05a53003cb926bbd2/view?project=6756a8dc000c0d24754b&mode=admin",
     },
     {
       name: "Dr. Purushottam Dadheech",
       designation: "Padma Shri (Dance)",
-      src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1737626245/3_udvxdm.png",
+      src: "https://cloud.appwrite.io/v1/storage/buckets/67a0557c003c575360a3/files/67a05a2d000d4884385d/view?project=6756a8dc000c0d24754b&mode=admin",
     },
     {
       name: "Mr. Satendra Lohiya",
       designation: "Padma Shri (Sports)",
-      src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1737626259/4_lw0zzg.png",
+      src: "https://cloud.appwrite.io/v1/storage/buckets/67a0557c003c575360a3/files/67a05a0300054efd5136/view?project=6756a8dc000c0d24754b&mode=admin",
     },
     {
       name: "Mr. Banwari Lal ",
       designation: "Padma Shri (Environment)",
-      src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1737626279/5_ialmzt.png",
+      src: "https://cloud.appwrite.io/v1/storage/buckets/67a0557c003c575360a3/files/67a059d4003e5f830720/view?project=6756a8dc000c0d24754b&mode=admin",
     },
     {
       name: "Mrs. Durgabai Vyam",
       designation: "Padma Shri (Art)",
-      src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1737626263/6_imcf8f.png",
+      src: "https://cloud.appwrite.io/v1/storage/buckets/67a0557c003c575360a3/files/67a059a2002460ed72e9/view?project=6756a8dc000c0d24754b&mode=admin",
     },
     {
       name: "Mr. Bhagwatilal Rajpurohit",
       designation: "Padma Shri (Literature)",
-      src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1737626268/7_fpfesx.png",
+      src: "https://cloud.appwrite.io/v1/storage/buckets/67a0557c003c575360a3/files/67a05973003a4b150ee1/view?project=6756a8dc000c0d24754b&mode=admin",
     },
     {
       name: "Mr. Kaluram Bamaniya",
       designation: "Padma Shri (Art)",
-      src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1737626292/12_srfmz1.png",
+      src: "https://cloud.appwrite.io/v1/storage/buckets/67a0557c003c575360a3/files/67a059430005124726f0/view?project=6756a8dc000c0d24754b&mode=admin",
     },
     {
       name: "Shri Bhajju Shyam",
       designation: "Padma Shri (Literature)",
-      src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1737626290/13_on4bki.png",
+      src: "https://cloud.appwrite.io/v1/storage/buckets/67a0557c003c575360a3/files/67a05912001f62636e55/view?project=6756a8dc000c0d24754b&mode=admin",
     },
     {
       name: "Dr. Munishwar Dawar",
       designation: "Padma Shri (Medicine)",
-      src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1737626281/14_a1sudn.png",
+      src: "https://cloud.appwrite.io/v1/storage/buckets/67a0557c003c575360a3/files/67a058e6002f9979eb8e/view?project=6756a8dc000c0d24754b&mode=admin",
     },
     {
       name: "Master Avnish Tiwari",
       designation: "P.M Rashtriya Bal Puraskar",
-      src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1737626293/15_aoyoht.png",
+      src: "https://cloud.appwrite.io/v1/storage/buckets/67a0557c003c575360a3/files/67a058b8000a03f0faf3/view?project=6756a8dc000c0d24754b&mode=admin",
     },
     {
       name: "Dr. Kapil Tiwari",
       designation: "Padma Shri (Education)",
-      src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1737626283/11_hmf0op.png",
+      src: "https://cloud.appwrite.io/v1/storage/buckets/67a0557c003c575360a3/files/67a05880002f4fe5a23b/view?project=6756a8dc000c0d24754b&mode=admin",
     },
     {
       name: "Ms. Varsha Varman",
       designation: "Asian Games Medallist",
-      src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1737626272/10_pazobg.png",
+      src: "https://cloud.appwrite.io/v1/storage/buckets/67a0557c003c575360a3/files/67a0583f00285ce2f950/view?project=6756a8dc000c0d24754b&mode=admin",
     },
     {
       name: "Mr. Maaheen Jaiswal",
       designation: "Google Delegate",
-      src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1738134315/WhatsApp_Image_2025-01-29_at_12.31.25_erqz9m.jpg",
+      src: "https://cloud.appwrite.io/v1/storage/buckets/67a0557c003c575360a3/files/67a05abf001ab7d662aa/view?project=6756a8dc000c0d24754b&mode=admin",
     },
   ];
 
