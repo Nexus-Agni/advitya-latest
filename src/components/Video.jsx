@@ -72,32 +72,32 @@ export const Video = () => {
       >
         {/* Background image */}
         <img
-          src="https://res.cloudinary.com/dkjhkep0m/image/upload/v1733298101/MC-Center.jpg"
+          src="https://cloud.appwrite.io/v1/storage/buckets/679e48ae0017ce0d8b62/files/679fa61d000dbc8724b0/view?project=6756a8dc000c0d24754b&mode=admin"
           className="w-[90%] h-full object-cover opacity-80 rounded-3xl"
           alt="Advitya 2024 Background"
         />
 
         {/* Overlay images */}
         <img
-          src="https://res.cloudinary.com/dkjhkep0m/image/upload/v1733298186/Raj%20Thakur.jpg"
+          src="https://cloud.appwrite.io/v1/storage/buckets/679e48ae0017ce0d8b62/files/679f8bc60032d1518403/view?project=6756a8dc000c0d24754b&mode=admin"
           alt="Advitya 2024 Highlight"
           className="absolute top-10 right-4 py-2 px-5 rounded-3xl md:z-10"
           style={{ width: "500px", height: "auto", borderRadius: "30px" }}
         />
         <img
-          src="https://res.cloudinary.com/dkjhkep0m/image/upload/v1733298255/KabirCafe.jpg"
+          src="https://cloud.appwrite.io/v1/storage/buckets/679e48ae0017ce0d8b62/files/679f87c2003debaac9a3/view?project=6756a8dc000c0d24754b&mode=admin"
           alt="Advitya 2024 Highlight"
           className="absolute top-10 left-10 py-2 px-5 rounded-3xl md:z-10"
           style={{ width: "500px", height: "auto", borderRadius: "30px" }}
         />
         <img
-          src="https://res.cloudinary.com/dkjhkep0m/image/upload/v1733296921/Advitya3.jpg"
+          src="https://cloud.appwrite.io/v1/storage/buckets/679e48ae0017ce0d8b62/files/679f87cb002c58b71e71/view?project=6756a8dc000c0d24754b&mode=admin"
           alt="Advitya 2024 Highlight"
           className="absolute top-50 left-10 py-2 px-5 rounded-3xl md:z-10"
           style={{ width: "500px", height: "auto", borderRadius: "30px" }}
         />
         <img
-          src="https://res.cloudinary.com/dkjhkep0m/image/upload/v1733298329/MC-BottomRight.jpg"
+          src="https://cloud.appwrite.io/v1/storage/buckets/679e48ae0017ce0d8b62/files/679f9f72000a840845d3/view?project=6756a8dc000c0d24754b&mode=admin"
           alt="Advitya 2024 Highlight"
           className="absolute top-70 right-4 py-7 rounded-2xl px-5 z-10"
           style={{ width: "500px", height: "auto", borderRadius: "30px" }}

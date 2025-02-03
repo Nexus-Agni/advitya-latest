@@ -21,7 +21,7 @@ function Navbar1({ className }) {
       <Menu setActive={setActive} className="bg-white">
         <a href="https://vitbhopal.ac.in" target="_blank">
           <img
-            src="https://res.cloudinary.com/dkjhkep0m/image/upload/v1733299178/VIT%20Logo.png"
+            src="https://cloud.appwrite.io/v1/storage/buckets/679e48ae0017ce0d8b62/files/679f84db000b7947397b/view?project=6756a8dc000c0d24754b&mode=admin"
             alt="Logo"
             className="h-10 w-full"
           />

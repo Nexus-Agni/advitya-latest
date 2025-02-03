@@ -69,7 +69,7 @@ export default function TeamMembersPage() {
     name: "Dr. G. Viswanathan",
     position: "Chancellor",
     image:
-      "https://res.cloudinary.com/dkjhkep0m/image/upload/v1733749788/chancellor.jpg",
+      "https://cloud.appwrite.io/v1/storage/buckets/679e48ae0017ce0d8b62/files/679f76af002ea5dfdf3e/view?project=6756a8dc000c0d24754b&mode=admin",
   };
 
   const vicePresidents = [
@@ -77,38 +77,38 @@ export default function TeamMembersPage() {
       name: "Mr. Sankar Viswanathan",
       position: "Vice President",
       image:
-        "https://res.cloudinary.com/dkjhkep0m/image/upload/v1733299177/vp.jpg",
+        "https://cloud.appwrite.io/v1/storage/buckets/679e48ae0017ce0d8b62/files/679f76d5001c17570e93/view?project=6756a8dc000c0d24754b&mode=admin",
     },
     {
       name: "Ms. Kadhambari S Viswanathan",
       position: "Assistant Vice President",
       image:
-        "https://res.cloudinary.com/dkjhkep0m/image/upload/v1733750221/avp.jpg",
+        "https://cloud.appwrite.io/v1/storage/buckets/679e48ae0017ce0d8b62/files/679f7636001524ac350a/view?project=6756a8dc000c0d24754b&mode=admin",
     },
   ];
 
   const administration = [
     {
-      name: "Dr. Senthil Kumar Arumugam",
-      position: "Vice Chancellor",
-      image:
-        "https://res.cloudinary.com/dkjhkep0m/image/upload/v1733299177/vc.jpg",
-    },
-    {
       name: "Prof. T. B. Sridharan",
       position: "Pro-Vice Chancellor",
       image:
-        "https://res.cloudinary.com/dkjhkep0m/image/upload/v1738047106/pro-vc.jpg",
+        "https://cloud.appwrite.io/v1/storage/buckets/679e48ae0017ce0d8b62/files/679f76fa003b4bd42427/view?project=6756a8dc000c0d24754b&mode=admin",
+    },
+    {
+      name: "KK Nair",
+      position: "Acting Registrar",
+      image:
+        "https://cloud.appwrite.io/v1/storage/buckets/679e48ae0017ce0d8b62/files/679f7711001ce0094a6f/view?project=6756a8dc000c0d24754b&mode=admin",
     },
   ];
 
   const registrar = [
-    {
-      name: "KK Nair",
-      position: "Registrar",
-      image:
-        "https://res.cloudinary.com/dkjhkep0m/image/upload/v1733751658/registrar.jpg",
-    },
+    // {
+    //   name: "KK Nair",
+    //   position: "Registrar",
+    //   image:
+    //     "https://res.cloudinary.com/dkjhkep0m/image/upload/v1733751658/registrar.jpg",
+    // },
   ];
 
   const convenor = [{ name: "Dr. Yogesh Shukla", position: "Convenor" }];

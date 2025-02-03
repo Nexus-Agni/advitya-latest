@@ -9,32 +9,27 @@ export function Leadership() {
     {
       title: "Dr. G. Viswanathan",
       description: "Chancellor",
-      img: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1733749788/chancellor.jpg",
+      img: "https://cloud.appwrite.io/v1/storage/buckets/679e48ae0017ce0d8b62/files/679f76af002ea5dfdf3e/view?project=6756a8dc000c0d24754b&mode=admin",
     },
     {
       title: "Mr. Sankar Viswanathan",
       description: "Vice President",
-      img: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1733299177/vp.jpg",
+      img: "https://cloud.appwrite.io/v1/storage/buckets/679e48ae0017ce0d8b62/files/679f76d5001c17570e93/view?project=6756a8dc000c0d24754b&mode=admin",
     },
     {
       title: "Ms. Kadhambari S Viswanathan",
       description: "Assistant Vice President",
-      img: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1733750221/avp.jpg",
-    },
-    {
-      title: "Dr. Senthil Kumar Arumugam",
-      description: "Vice Chancellor",
-      img: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1733299177/vc.jpg",
+      img: "https://cloud.appwrite.io/v1/storage/buckets/679e48ae0017ce0d8b62/files/679f7636001524ac350a/view?project=6756a8dc000c0d24754b&mode=admin",
     },
     {
       title: "Prof. T. B. Sridharan",
       description: "Pro-Vice Chancellor",
-      img: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1738047106/pro-vc.jpg",
+      img: "https://cloud.appwrite.io/v1/storage/buckets/679e48ae0017ce0d8b62/files/679f76fa003b4bd42427/view?project=6756a8dc000c0d24754b&mode=admin",
     },
     {
       title: "KK Nair",
-      description: "Registrar",
-      img: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1733751658/registrar.jpg",
+      description: "Acting Registrar",
+      img: "https://cloud.appwrite.io/v1/storage/buckets/679e48ae0017ce0d8b62/files/679f7711001ce0094a6f/view?project=6756a8dc000c0d24754b&mode=admin",
     },
   ];
   return (

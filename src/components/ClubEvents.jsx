@@ -8,22 +8,22 @@ export function ClubEvents() {
   const cards = [
     {
       title: "Technical Events",
-      src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1733300780/Tech.jpg",
+      src: "https://cloud.appwrite.io/v1/storage/buckets/679e48ae0017ce0d8b62/files/679f98500028007e6443/view?project=6756a8dc000c0d24754b&mode=admin",
       link: "/technical-events",
     },
     {
       title: "Non-Technical Events",
-      src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1733300780/Non-Tech.jpg",
+      src: "https://cloud.appwrite.io/v1/storage/buckets/679e48ae0017ce0d8b62/files/679f98580013582b9148/view?project=6756a8dc000c0d24754b&mode=admin",
       link: "/non-technical-events",
     },
     {
       title: "Pro Night",
-      src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1733300780/Pro-Show.jpg",
+      src: "https://cloud.appwrite.io/v1/storage/buckets/679e48ae0017ce0d8b62/files/679f985e001606ee068c/view?project=6756a8dc000c0d24754b&mode=admin",
       link: "/pro-night",
     },
     {
       title: "MP Gaurav",
-      src: "https://res.cloudinary.com/dkjhkep0m/image/upload/v1738140373/MP_Gaurav_y517qx.png",
+      src: "https://cloud.appwrite.io/v1/storage/buckets/679e48ae0017ce0d8b62/files/679f9b340037d12971ea/view?project=6756a8dc000c0d24754b&mode=admin",
       link: "/mp-pride",
     },
   ];
