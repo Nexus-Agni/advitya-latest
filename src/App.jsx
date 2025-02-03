@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import "./App.css";
 import { Route, Routes } from "react-router-dom";
 import Home from "./pages/Home";
@@ -9,8 +10,42 @@ import "react-toastify/dist/ReactToastify.css";
 import TeamMembersPage from "./pages/team-members-page";
 import ProNight from "./pages/ProNight";
 import MpPride from "./pages/mppride";
+import ApplePreloader from "./components/ui/apple-preloader";
 
 function App() {
+  const [imagesLoaded, setImagesLoaded] = useState(false);
+
+  useEffect(() => {
+    const checkImagesLoaded = () => {
+      const images = document.querySelectorAll("img");
+      const totalImages = images.length;
+      let loadedImages = 0;
+
+      images.forEach((img) => {
+        if (img.complete) {
+          loadedImages++;
+        } else {
+          img.addEventListener("load", () => {
+            loadedImages++;
+            if (loadedImages === totalImages) {
+              setImagesLoaded(true);
+            }
+          });
+        }
+      });
+
+      if (loadedImages === totalImages) {
+        setImagesLoaded(true);
+      }
+    };
+
+    checkImagesLoaded();
+  }, []);
+
+  if (!imagesLoaded) {
+    return <ApplePreloader />;
+  }
+
   return (
     <>
       <Routes>
