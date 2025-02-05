@@ -9,21 +9,19 @@ import { CustomScrollbar } from "../components/ui/custom-scrollbar";
 import { dbService } from "../appwrite/db";
 import Preloader from "../components/Preloader";
 
-export function TechEvents() {
+export function VirtualEvents() {
   const [isLoading, setIsLoading] = useState(true);
   const [active, setActive] = useState(null);
-  const [technicalEvents, setTechnicalEvents] = useState([]);
+  const [virtualEvents, setVirtualEvents] = useState([]);
   const [dropdownOpen, setDropdownOpen] = useState(false);
   const id = useId();
   const ref = useRef(null);
   const navigate = useNavigate();
 
   useEffect(() => {
-    async function fetchTechEvents() {
+    async function fetchVirtualEvents() {
       try {
-        const events = await dbService.getTechEvents();
-        console.log("Events:", events);
-
+        const events = await dbService.getVirtualEvents();
         const transformedEvents = events.map((event) => ({
           title: event.EventName,
           clubName: event.ClubName,
@@ -47,14 +45,14 @@ export function TechEvents() {
           rank: event.Rank,
           eventDescription: () => <p>{event.EventDescription}</p>,
         }));
-        setTechnicalEvents(transformedEvents);
+        setVirtualEvents(transformedEvents);
         setIsLoading(false);
       } catch (error) {
-        console.error("Error fetching technical events:", error);
+        console.error("Error fetching non-technical events:", error);
       }
     }
 
-    fetchTechEvents();
+    fetchVirtualEvents();
   }, []);
 
   useEffect(() => {
@@ -74,11 +72,11 @@ export function TechEvents() {
     return () => window.removeEventListener("keydown", onKeyDown);
   }, [active]);
 
+  useOutsideClick(ref, () => setActive(null));
+
   const handleModalClose = () => {
     setDropdownOpen(false);
   };
-
-  useOutsideClick(ref, () => setActive(null));
 
   if (isLoading) {
     return <Preloader />;
@@ -88,7 +86,9 @@ export function TechEvents() {
     <div className="h-full w-full">
       <div className="flex items-center justify-start p-4">
         <button
-          onClick={() => navigate("/events", { state: { from: "TechEvents" } })}
+          onClick={() =>
+            navigate("/events", { state: { from: "NonTechEvents" } })
+          }
           className="text-white bg-purple-600 py-2 px-4 rounded-lg hover:scale-105 ease-in-out duration-300 flex items-center"
         >
           <svg
@@ -113,7 +113,7 @@ export function TechEvents() {
         showBorder={false}
         className="text-4xl md:text-6xl py-10"
       >
-        TECHNICAL EVENTS
+        VIRTUAL EVENTS
       </GradientText>
       <AnimatePresence>
         {active && typeof active === "object" && (
@@ -149,7 +149,7 @@ export function TechEvents() {
             <motion.div
               layoutId={`card-${active.title}-${id}`}
               ref={ref}
-              className="w-full max-w-[600px] h-full md:h-fit md:max-h-[90%] flex flex-col bg-white dark:bg-neutral-900 rounded-3xl"
+              className="w-full max-w-[600px] h-full md:h-fit md:max-h-[90%] flex flex-col bg-white dark:bg-neutral-900 sm:rounded-3xl"
             >
               <CustomScrollbar className="overflow-scroll overflow-x-hidden">
                 <motion.div layoutId={`image-${active.title}-${id}`}>
@@ -233,10 +233,11 @@ export function TechEvents() {
                   <div className="pt-4 relative px-4">
                     <CustomScrollbar className="text-neutral-600 text-sm md:text-base lg:text-lg h-40 md:h-fit pb-10 flex flex-col items-start gap-4 overflow-auto dark:text-neutral-400">
                       {typeof active.eventDescription === "function" ? (
-                        <div>{active.eventDescription()}</div>
+                        <div className="pb-4">{active.eventDescription()}</div>
                       ) : (
                         active.eventDescription
                       )}
+                      <div className="pb-4"></div>
                     </CustomScrollbar>
                   </div>
                 </div>
@@ -246,7 +247,7 @@ export function TechEvents() {
         ) : null}
       </AnimatePresence>
       <FocusCards
-        cards={technicalEvents}
+        cards={virtualEvents}
         setActive={setActive}
         onClose={handleModalClose}
       />

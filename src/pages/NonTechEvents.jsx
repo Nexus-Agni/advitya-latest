@@ -7,8 +7,10 @@ import { FocusCards } from "../components/ui/focus-cards";
 import { MapPin, Calendar, IndianRupee } from "lucide-react";
 import { CustomScrollbar } from "../components/ui/custom-scrollbar";
 import { dbService } from "../appwrite/db";
+import Preloader from "../components/Preloader";
 
 export function NonTechEvents() {
+  const [isLoading, setIsLoading] = useState(true);
   const [active, setActive] = useState(null);
   const [nonTechnicalEvents, setNonTechnicalEvents] = useState([]);
   const [dropdownOpen, setDropdownOpen] = useState(false);
@@ -20,31 +22,31 @@ export function NonTechEvents() {
     async function fetchNonTechEvents() {
       try {
         const events = await dbService.getNonTechEvents();
-        const transformedEvents = events
-          .map((event) => ({
-            title: event.EventName,
-            clubName: event.ClubName,
-            src: event.EventImage,
-            ctaText: "Register",
-            ctaLinkInternal: event.InternalRegistration,
-            ctaLinkExternal: event.ExternalRegistration,
-            venue: event.Venue,
-            date: new Date(event.EventDate).toLocaleDateString(),
-            time: new Date(
-              `1970-01-01T${event.EventTime.slice(
-                0,
-                2
-              )}:${event.EventTime.slice(2, 4)}:00`
-            ).toLocaleTimeString([], {
-              hour: "2-digit",
-              minute: "2-digit",
-              hour12: false,
-            }),
-            entryFees: event.EntryFee,
-            rank: event.Rank,
-            eventDescription: () => <p>{event.EventDescription}</p>,
-          }))
+        const transformedEvents = events.map((event) => ({
+          title: event.EventName,
+          clubName: event.ClubName,
+          src: event.EventImage,
+          ctaText: "Register",
+          ctaLinkInternal: event.InternalRegistration,
+          ctaLinkExternal: event.ExternalRegistration,
+          venue: event.Venue,
+          date: new Date(event.EventDate).toLocaleDateString(),
+          time: new Date(
+            `1970-01-01T${event.EventTime.slice(0, 2)}:${event.EventTime.slice(
+              2,
+              4
+            )}:00`
+          ).toLocaleTimeString([], {
+            hour: "2-digit",
+            minute: "2-digit",
+            hour12: false,
+          }),
+          entryFees: event.EntryFee,
+          rank: event.Rank,
+          eventDescription: () => <p>{event.EventDescription}</p>,
+        }));
         setNonTechnicalEvents(transformedEvents);
+        setIsLoading(false);
       } catch (error) {
         console.error("Error fetching non-technical events:", error);
       }
@@ -71,6 +73,14 @@ export function NonTechEvents() {
   }, [active]);
 
   useOutsideClick(ref, () => setActive(null));
+
+  const handleModalClose = () => {
+    setDropdownOpen(false);
+  };
+
+  if (isLoading) {
+    return <Preloader />;
+  }
 
   return (
     <div className="h-full w-full">
@@ -236,7 +246,11 @@ export function NonTechEvents() {
           </div>
         ) : null}
       </AnimatePresence>
-      <FocusCards cards={nonTechnicalEvents} setActive={setActive} />
+      <FocusCards
+        cards={nonTechnicalEvents}
+        setActive={setActive}
+        onClose={handleModalClose}
+      />
     </div>
   );
 }

@@ -9,27 +9,27 @@ export function Leadership() {
     {
       title: "Dr. G. Viswanathan",
       description: "Chancellor",
-      img: "https://cloud.appwrite.io/v1/storage/buckets/679e48ae0017ce0d8b62/files/679f76af002ea5dfdf3e/view?project=6756a8dc000c0d24754b&mode=admin",
+      img: "https://cloud.appwrite.io/v1/storage/buckets/67a1d7b300237ca90544/files/67a1da6200323b6714c0/view?project=6756a8dc000c0d24754b&mode=admin",
     },
     {
       title: "Mr. Sankar Viswanathan",
       description: "Vice President",
-      img: "https://cloud.appwrite.io/v1/storage/buckets/679e48ae0017ce0d8b62/files/679f76d5001c17570e93/view?project=6756a8dc000c0d24754b&mode=admin",
+      img: "https://cloud.appwrite.io/v1/storage/buckets/67a1d7b300237ca90544/files/67a1da7d003c48ea9091/view?project=6756a8dc000c0d24754b&mode=admin",
     },
     {
       title: "Ms. Kadhambari S Viswanathan",
       description: "Assistant Vice President",
-      img: "https://cloud.appwrite.io/v1/storage/buckets/679e48ae0017ce0d8b62/files/679f7636001524ac350a/view?project=6756a8dc000c0d24754b&mode=admin",
+      img: "https://cloud.appwrite.io/v1/storage/buckets/67a1d7b300237ca90544/files/67a1da00001fbbf2370e/view?project=6756a8dc000c0d24754b&mode=admin",
     },
     {
       title: "Prof. T. B. Sridharan",
       description: "Pro-Vice Chancellor",
-      img: "https://cloud.appwrite.io/v1/storage/buckets/679e48ae0017ce0d8b62/files/679f76fa003b4bd42427/view?project=6756a8dc000c0d24754b&mode=admin",
+      img: "https://cloud.appwrite.io/v1/storage/buckets/67a1d7b300237ca90544/files/67a1da9d002e903bf922/view?project=6756a8dc000c0d24754b&mode=admin",
     },
     {
-      title: "KK Nair",
+      title: "Mr. K.K. Nair",
       description: "Acting Registrar",
-      img: "https://cloud.appwrite.io/v1/storage/buckets/679e48ae0017ce0d8b62/files/679f7711001ce0094a6f/view?project=6756a8dc000c0d24754b&mode=admin",
+      img: "https://cloud.appwrite.io/v1/storage/buckets/67a1d7b300237ca90544/files/67a1daa80023d5170ac7/view?project=6756a8dc000c0d24754b&mode=admin",
     },
   ];
   return (
