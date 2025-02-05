@@ -17,6 +17,11 @@ export function ClubEvents() {
       link: "/non-technical-events",
     },
     {
+      title: "Virtual Events",
+      src: "https://cloud.appwrite.io/v1/storage/buckets/67a1d7b300237ca90544/files/67a1db80000be49f3b53/view?project=6756a8dc000c0d24754b&mode=admin",
+      link: "/virtual-events",
+    },
+    {
       title: "Pro Night",
       src: "https://cloud.appwrite.io/v1/storage/buckets/67a1d7b300237ca90544/files/67a1dbab0027d654181a/view?project=6756a8dc000c0d24754b&mode=admin",
       link: "/pro-night",

@@ -5,6 +5,7 @@ import Home from "./pages/Home";
 import { ClubEvents } from "./components/ClubEvents";
 import { TechEvents } from "./pages/TechEvents";
 import { NonTechEvents } from "./pages/NonTechEvents";
+import { VirtualEvents } from "./pages/VirtualEvents";
 import { ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import TeamMembersPage from "./pages/team-members-page";
@@ -37,7 +38,7 @@ function App() {
         handleImageLoad();
       } else {
         img.addEventListener("load", handleImageLoad);
-        img.addEventListener("error", handleImageLoad); 
+        img.addEventListener("error", handleImageLoad);
       }
     });
 
@@ -60,6 +61,7 @@ function App() {
         <Route path="/events" element={<ClubEvents />} />
         <Route path="/technical-events" element={<TechEvents />} />
         <Route path="/non-technical-events" element={<NonTechEvents />} />
+        <Route path="/virtual-events" element={<VirtualEvents />} />
         <Route path="/team" element={<TeamMembersPage />} />
         <Route path="/pro-night" element={<ProNight />} />
         <Route path="/mp-pride" element={<MpPride />} />
