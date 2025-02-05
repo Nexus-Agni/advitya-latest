@@ -41,7 +41,6 @@ export function ContactForm() {
         "wWa6LRWZ9qGg3ydqP"
       );
 
-      console.log(result.text);
       toast.success("Message sent successfully!");
       setFirstname("");
       setLastname("");

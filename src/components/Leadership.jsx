@@ -27,7 +27,7 @@ export function Leadership() {
       img: "https://cloud.appwrite.io/v1/storage/buckets/67a1d7b300237ca90544/files/67a1da9d002e903bf922/view?project=6756a8dc000c0d24754b&mode=admin",
     },
     {
-      title: "KK Nair",
+      title: "Mr. K.K. Nair",
       description: "Acting Registrar",
       img: "https://cloud.appwrite.io/v1/storage/buckets/67a1d7b300237ca90544/files/67a1daa80023d5170ac7/view?project=6756a8dc000c0d24754b&mode=admin",
     },

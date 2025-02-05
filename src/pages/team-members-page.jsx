@@ -95,7 +95,7 @@ export default function TeamMembersPage() {
         "https://cloud.appwrite.io/v1/storage/buckets/679e48ae0017ce0d8b62/files/679f76fa003b4bd42427/view?project=6756a8dc000c0d24754b&mode=admin",
     },
     {
-      name: "KK Nair",
+      name: "Mr. K.K. Nair",
       position: "Acting Registrar",
       image:
         "https://cloud.appwrite.io/v1/storage/buckets/679e48ae0017ce0d8b62/files/679f7711001ce0094a6f/view?project=6756a8dc000c0d24754b&mode=admin",
