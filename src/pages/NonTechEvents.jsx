@@ -46,6 +46,7 @@ export function NonTechEvents() {
           eventDescription: () => <p>{event.EventDescription}</p>,
         }));
         setNonTechnicalEvents(transformedEvents);
+        await preloadImages(transformedEvents);
         setIsLoading(false);
       } catch (error) {
         console.error("Error fetching non-technical events:", error);
@@ -54,6 +55,23 @@ export function NonTechEvents() {
 
     fetchNonTechEvents();
   }, []);
+
+  const preloadImages = async (events) => {
+    try {
+      await Promise.all(
+        events.map((event) => {
+          return new Promise((resolve) => {
+            const img = new Image();
+            img.src = event.src;
+            img.onload = resolve;
+            img.onerror = resolve;
+          });
+        })
+      );
+    } catch (error) {
+      console.error("Error preloading images:", error);
+    }
+  };
 
   useEffect(() => {
     function onKeyDown(event) {

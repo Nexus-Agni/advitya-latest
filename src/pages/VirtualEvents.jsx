@@ -46,14 +46,32 @@ export function VirtualEvents() {
           eventDescription: () => <p>{event.EventDescription}</p>,
         }));
         setVirtualEvents(transformedEvents);
+        await preloadImages(transformedEvents);
         setIsLoading(false);
       } catch (error) {
-        console.error("Error fetching non-technical events:", error);
+        console.error("Error fetching virtual events:", error);
       }
     }
 
     fetchVirtualEvents();
   }, []);
+
+  const preloadImages = async (events) => {
+    try {
+      await Promise.all(
+        events.map((event) => {
+          return new Promise((resolve) => {
+            const img = new Image();
+            img.src = event.src;
+            img.onload = resolve;
+            img.onerror = resolve;
+          });
+        })
+      );
+    } catch (error) {
+      console.error("Error preloading images:", error);
+    }
+  };
 
   useEffect(() => {
     function onKeyDown(event) {
@@ -87,7 +105,7 @@ export function VirtualEvents() {
       <div className="flex items-center justify-start p-4">
         <button
           onClick={() =>
-            navigate("/events", { state: { from: "NonTechEvents" } })
+            navigate("/events", { state: { from: "VirtualEvents" } })
           }
           className="text-white bg-purple-600 py-2 px-4 rounded-lg hover:scale-105 ease-in-out duration-300 flex items-center"
         >

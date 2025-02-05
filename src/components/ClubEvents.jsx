@@ -18,7 +18,7 @@ export function ClubEvents() {
     },
     {
       title: "Virtual Events",
-      src: "https://cloud.appwrite.io/v1/storage/buckets/67a1d7b300237ca90544/files/67a1db80000be49f3b53/view?project=6756a8dc000c0d24754b&mode=admin",
+      src: "https://cloud.appwrite.io/v1/storage/buckets/67a1d7b300237ca90544/files/67a3389d0014da31ae2e/view?project=6756a8dc000c0d24754b&mode=admin",
       link: "/virtual-events",
     },
     {
