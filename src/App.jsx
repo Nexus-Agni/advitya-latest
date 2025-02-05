@@ -16,30 +16,37 @@ function App() {
   const [imagesLoaded, setImagesLoaded] = useState(false);
 
   useEffect(() => {
-    const checkImagesLoaded = () => {
-      const images = document.querySelectorAll("img");
-      const totalImages = images.length;
-      let loadedImages = 0;
+    const images = document.querySelectorAll("img");
+    let loadedImages = 0;
+    const totalImages = images.length;
 
-      images.forEach((img) => {
-        if (img.complete) {
-          loadedImages++;
-        } else {
-          img.addEventListener("load", () => {
-            loadedImages++;
-            if (loadedImages === totalImages) {
-              setImagesLoaded(true);
-            }
-          });
-        }
-      });
+    if (totalImages === 0) {
+      setImagesLoaded(true);
+      return;
+    }
 
+    const handleImageLoad = () => {
+      loadedImages++;
       if (loadedImages === totalImages) {
         setImagesLoaded(true);
       }
     };
 
-    checkImagesLoaded();
+    images.forEach((img) => {
+      if (img.complete) {
+        handleImageLoad();
+      } else {
+        img.addEventListener("load", handleImageLoad);
+        img.addEventListener("error", handleImageLoad); 
+      }
+    });
+
+    return () => {
+      images.forEach((img) => {
+        img.removeEventListener("load", handleImageLoad);
+        img.removeEventListener("error", handleImageLoad);
+      });
+    };
   }, []);
 
   if (!imagesLoaded) {
