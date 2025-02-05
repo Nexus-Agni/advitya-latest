@@ -82,7 +82,6 @@ export default function Mppride() {
   ];
 
   useEffect(() => {
-    // Simulate image loading
     const preloadImages = async () => {
       try {
         await Promise.all(
@@ -91,7 +90,7 @@ export default function Mppride() {
               const img = new Image();
               img.src = card.src;
               img.onload = resolve;
-              img.onerror = resolve; // Prevent errors from stopping execution
+              img.onerror = resolve; 
             });
           })
         );
@@ -104,7 +103,7 @@ export default function Mppride() {
       await preloadImages();
       setTimeout(() => {
         setIsLoading(false);
-      }, 3000); // Ensures Preloader is shown for at least 3 seconds
+      }, 3000); 
     }
 
     fetchAllData();
