@@ -1,56 +1,38 @@
 import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
 import { SkipBack, Play, Pause, SkipForward } from "lucide-react";
-
-const dummyCarouselImages = [
-  { src: "/images/dummy1.jpg", alt: "Dummy Image 1" },
-  { src: "/images/dummy2.jpg", alt: "Dummy Image 2" },
-  { src: "/images/dummy3.jpg", alt: "Dummy Image 3" },
-];
+import { Audio } from 'react-loader-spinner';
+import { useNavigate } from "react-router-dom";
 
 const dummySongs = [
   {
-    title: "Song 1",
+    title: "Shugal Laga Le",
     albumImage:
-      "https://cloud.appwrite.io/v1/storage/buckets/67a1d7b300237ca90544/files/67a1db88001255381c7a/view?project=6756a8dc000c0d24754b&mode=admin",
-    audioSrc: "/audio/song1.mp3",
+      "https://cloud.appwrite.io/v1/storage/buckets/67a1d7b300237ca90544/files/67a4858d0000b1f9b75c/view?project=6756a8dc000c0d24754b&mode=admin",
+    audioSrc:
+      "https://cloud.appwrite.io/v1/storage/buckets/67a481a700068f90490a/files/67a481f1003401f95cf3/view?project=6756a8dc000c0d24754b&mode=admin",
   },
   {
-    title: "Song 2",
+    title: "Train Song",
     albumImage:
-      "https://cloud.appwrite.io/v1/storage/buckets/67a1d7b300237ca90544/files/67a1db80000be49f3b53/view?project=6756a8dc000c0d24754b&mode=admin",
-    audioSrc: "/audio/song2.mp3",
+      "https://cloud.appwrite.io/v1/storage/buckets/67a1d7b300237ca90544/files/67a4bb8d0026c5e1f03c/view?project=6756a8dc000c0d24754b&mode=admin",
+    audioSrc:
+      "https://cloud.appwrite.io/v1/storage/buckets/67a481a700068f90490a/files/67a4865a0020668a9ed9/view?project=6756a8dc000c0d24754b&mode=admin",
   },
   {
-    title: "Song 3",
+    title: "Darmiyan",
     albumImage:
-      "https://cloud.appwrite.io/v1/storage/buckets/67a1d7b300237ca90544/files/67a1dbab0027d654181a/view?project=6756a8dc000c0d24754b&mode=admin",
-    audioSrc: "/audio/song3.mp3",
+      "https://cloud.appwrite.io/v1/storage/buckets/67a1d7b300237ca90544/files/67a48579000acee77ec6/view?project=6756a8dc000c0d24754b&mode=admin",
+    audioSrc:
+      "https://cloud.appwrite.io/v1/storage/buckets/67a481a700068f90490a/files/67a4866a00024aa4c010/view?project=6756a8dc000c0d24754b&mode=admin",
   },
 ];
 
 export default function ProNight() {
-  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const navigate = useNavigate();
   const [isPlaying, setIsPlaying] = useState(true);
   const [currentSongIndex, setCurrentSongIndex] = useState(0);
-  const timerRef = useRef(null);
   const audioRef = useRef(null);
-
-  useEffect(() => {
-    if (isPlaying) {
-      timerRef.current = setInterval(() => {
-        setCurrentImageIndex(
-          (prevIndex) => (prevIndex + 1) % dummyCarouselImages.length
-        );
-        setCurrentSongIndex(
-          (prevIndex) => (prevIndex + 1) % dummySongs.length
-        );
-      }, 5000);
-    }
-    return () => {
-      if (timerRef.current) clearInterval(timerRef.current);
-    };
-  }, [isPlaying]);
 
   useEffect(() => {
     if (audioRef.current) {
@@ -63,17 +45,11 @@ export default function ProNight() {
     }
   }, [currentSongIndex, isPlaying]);
 
-  const nextImage = () => {
-    setCurrentImageIndex(
-      (prevIndex) => (prevIndex + 1) % dummyCarouselImages.length
-    );
+  const nextSong = () => {
     setCurrentSongIndex((prevIndex) => (prevIndex + 1) % dummySongs.length);
   };
 
-  const previousImage = () => {
-    setCurrentImageIndex((prevIndex) =>
-      prevIndex === 0 ? dummyCarouselImages.length - 1 : prevIndex - 1
-    );
+  const previousSong = () => {
     setCurrentSongIndex((prevIndex) =>
       prevIndex === 0 ? dummySongs.length - 1 : prevIndex - 1
     );
@@ -84,17 +60,40 @@ export default function ProNight() {
   };
 
   const selectSong = (index) => {
-    setCurrentSongIndex(index);
-    setCurrentImageIndex(index);
+    if (index === currentSongIndex) {
+      setIsPlaying((prev) => !prev);
+    } else {
+      setCurrentSongIndex(index);
+      setIsPlaying(true);
+    }
   };
 
   return (
-    <div
-      className="bg-primary-foreground relative w-full overflow-hidden mb-2 xl:mb-[-250]"
-      id="about"
-    >
+    <div className="bg-primary-foreground relative w-full overflow-hidden mb-2 xl:mb-[-250]">
+      <div className="flex items-center justify-start p-4">
+        <button
+          onClick={() => navigate("/events", { state: { from: "TechEvents" } })}
+          className="text-white bg-purple-600 py-2 px-4 rounded-lg hover:scale-105 ease-in-out duration-300 flex items-center"
+        >
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            className="h-6 w-6 mr-2"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M15 19l-7-7 7-7"
+            />
+          </svg>
+          Back
+        </button>
+      </div>
       {/* Band Section */}
-      <section className="relative w-full min-h-screen bg-primary-foreground overflow-hidden py-16 md:py-24 lg:py-32">
+      <section className="relative w-full min-h-screen bg-primary-foreground overflow-hidden py-16 md:py-24 lg:py-">
         <div className="w-full max-w-[1400px] mx-auto px-4 md:px-6">
           <div className="flex flex-col items-center text-center mb-16">
             <img
@@ -103,10 +102,8 @@ export default function ProNight() {
               className="w-full max-w-[500px]  rounded-xl mb-8"
             />
             <h1 className="text-white text-4xl font-bold mb-4">Raghu Dixit</h1>
-            <p className="text-white text-lg max-w-2xl">
-              About the band: Lorem ipsum dolor sit amet, consectetur adipiscing
-              elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus
-              diam.
+            <p className="text-white text-md max-w-2xl">
+              Raghu Dixit, often regarded as the pioneer of independent music in India, has been captivating audiences worldwide for over two decades with his unique blend of traditional and contemporary sounds. His band, The Raghu Dixit Project, has performed over 2000 concerts across 5 continents, creating an unforgettable experience that inspires a generation of artists to sing proudly in vernacular languages.
             </p>
           </div>
 
@@ -146,28 +143,28 @@ export default function ProNight() {
               </div>
 
               {/* Carousel Controls */}
-              <div className="absolute -bottom-20 left-1/2 -translate-x-1/2 flex items-center gap-6 bg-primary-foreground px-6 py-3 rounded-full">
+              <div className="absolute -bottom-20 left-1/2 -translate-x-1/2 flex items-center gap-6 bg-black bg-opacity-80 px-6 py-3  rounded-full border-2 shadow-lg">
                 <button
-                  onClick={previousImage}
-                  className="p-2 rounded-full hover:bg-primary transition-colors group"
+                  onClick={previousSong}
+                  className="p-2 rounded-full hover:bg-gray-700 transition-colors group border-2"
                 >
-                  <SkipBack className="w-5 h-5 stroke-2 text-gray-200 group-hover:text-primary-foreground" />
+                  <SkipBack className="w-5 h-5 stroke-2 text-white group-hover:text-gray-200" />
                 </button>
                 <button
                   onClick={togglePlayPause}
-                  className="p-3 rounded-full bg-primary-foreground text-background hover:bg-background hover:text-primary-foreground transition-colors"
+                  className="p-3 rounded-full bg-gray-800 text-white hover:bg-gray-700 transition-colors border-2 border-gray-400"
                 >
                   {isPlaying ? (
-                    <Pause className="w-5 h-5 fill-current text-gray-200" />
+                    <Pause className="w-5 h-5 fill-current text-white" />
                   ) : (
-                    <Play className="w-5 h-5 fill-current text-gray-200" />
+                    <Play className="w-5 h-5 fill-current text-white" />
                   )}
                 </button>
                 <button
-                  onClick={nextImage}
-                  className="p-2 rounded-full hover:bg-primary transition-colors group"
+                  onClick={nextSong}
+                  className="p-2 rounded-full hover:bg-gray-700 transition-colors group border-2 border-gray-400"
                 >
-                  <SkipForward className="w-5 h-5 stroke-2 text-gray-200 group-hover:text-primary-foreground" />
+                  <SkipForward className="w-5 h-5 stroke-2 text-white group-hover:text-gray-200" />
                 </button>
               </div>
             </motion.div>
@@ -202,7 +199,24 @@ export default function ProNight() {
                           className="w-16 h-16 rounded-xl mr-4"
                         />
                         <span className="flex-1">{song.title}</span>
-                        <button className="p-2 rounded-full bg-primary-foreground text-background hover:bg-background hover:text-primary-foreground transition-colors">
+                        {index === currentSongIndex && isPlaying && (
+                          <Audio
+                            height="40"
+                            width="40"
+                            radius="9"
+                            color="#9f7aea"
+                            ariaLabel="audio-loading"
+                            wrapperStyle={{}}
+                            wrapperClass=""
+                          />
+                        )}
+                        <button
+                          className="p-2 rounded-full bg-primary-foreground text-background hover:bg-background hover:text-primary-foreground transition-colors"
+                          onClick={(e) => {
+                            e.stopPropagation();
+                            selectSong(index);
+                          }}
+                        >
                           {index === currentSongIndex && isPlaying ? (
                             <Pause className="w-5 h-5 fill-current text-gray-200" />
                           ) : (
@@ -218,7 +232,11 @@ export default function ProNight() {
           </div>
         </div>
       </section>
-      <audio ref={audioRef} src={dummySongs[currentSongIndex].audioSrc} />
+      <audio
+        ref={audioRef}
+        src={dummySongs[currentSongIndex].audioSrc}
+        onEnded={nextSong}
+      />
     </div>
   );
 }
