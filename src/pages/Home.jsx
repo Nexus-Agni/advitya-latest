@@ -10,6 +10,7 @@ import Footer from "../components/Footer";
 import ContactUsSection from "../components/ContactUsSection";
 import { Video } from "../components/Video";
 import { KeyHighlights } from "../components/KeyHighLights";
+import { Sponsors } from "../components/sponcers";
 
 function Home() {
   const [loading, setLoading] = useState(true);
@@ -52,6 +53,7 @@ function Home() {
       <Navbar />
       <Hero />
       <AdvityaDescription classname="bg-black" />
+      <Sponsors />
       <br />
       <Video className="hidden md:block" />
       <br />
