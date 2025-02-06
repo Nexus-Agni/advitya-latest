@@ -1,7 +1,16 @@
 import { useState, useEffect, useRef } from "react";
 import { motion } from "framer-motion";
-import { SkipBack, Play, Pause, SkipForward } from "lucide-react";
-import { Audio } from 'react-loader-spinner';
+import {
+  SkipBack,
+  Play,
+  Pause,
+  SkipForward,
+  Instagram,
+  Facebook,
+  Twitter,
+  Youtube,
+} from "lucide-react";
+import { Audio } from "react-loader-spinner";
 import { useNavigate } from "react-router-dom";
 
 const dummySongs = [
@@ -103,8 +112,44 @@ export default function ProNight() {
             />
             <h1 className="text-white text-4xl font-bold mb-4">Raghu Dixit</h1>
             <p className="text-white text-md max-w-2xl">
-              Raghu Dixit, often regarded as the pioneer of independent music in India, has been captivating audiences worldwide for over two decades with his unique blend of traditional and contemporary sounds. His band, The Raghu Dixit Project, has performed over 2000 concerts across 5 continents, creating an unforgettable experience that inspires a generation of artists to sing proudly in vernacular languages.
+              Raghu Dixit, often regarded as the pioneer of independent music in
+              India, has been captivating audiences worldwide for over two
+              decades with his unique blend of traditional and contemporary
+              sounds. His band, The Raghu Dixit Project, has performed over 2000
+              concerts across 5 continents, creating an unforgettable experience
+              that inspires a generation of artists to sing proudly in
+              vernacular languages.
             </p>
+            <div className="flex space-x-4 mt-4">
+              <a
+                href="https://www.instagram.com/theraghudixitproject/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Instagram className="w-6 h-6 text-white hover:text-purple-600 transition-colors" />
+              </a>
+              <a
+                href="https://www.facebook.com/trdp/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Facebook className="w-6 h-6 text-white hover:text-purple-600 transition-colors" />
+              </a>
+              <a
+                href="https://x.com/Raghu_Dixit"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Twitter className="w-6 h-6 text-white hover:text-purple-600 transition-colors" />
+              </a>
+              <a
+                href="https://www.youtube.com/raghudixitmusic"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Youtube className="w-6 h-6 text-white hover:text-purple-600 transition-colors" />
+              </a>
+            </div>
           </div>
 
           <div className="flex flex-col lg:flex-row items-center justify-between gap-16 lg:gap-24">
