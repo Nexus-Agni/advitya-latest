@@ -1,4 +1,3 @@
-import GradientText from "./ui/GradientText";
 import { FlipWords } from "./ui/flip-words";
 
 const Hero = () => {
@@ -42,21 +41,9 @@ const Hero = () => {
               alt="AdVITya Logo"
               className="md:h-[32rem]  h-[20rem]  "
             />
-            {/* <h2 className="text-text-primary dark:text-dark-text-primary text-pretty text-center text-3xl  md:text-4xl lg:text-[clamp(50px,7vw,75px)] font-medium leading-none tracking-[-1.44px] md:max-w-screen-lg md:tracking-[-2.16px] text-gray-200">20th - 22nd Feb, 2025</h2> */}
+
             <h1 className="text-text-primary dark:text-dark-text-primary text-pretty text-center text-3xl  md:text-5xl  font-medium leading-none tracking-[-1.44px] md:max-w-screen-lg md:tracking-[-2.16px] text-gray-200">
               Join us from{" "}
-              {/* <span className="bg-purple-600  py-1 px-3 rounded-full hover:scale-105 ease-in-out duration-300">
-                <GradientText
-                  animationSpeed={4}
-                  showBorder={false}
-                  display="inline"
-                  className="font-bold"
-                  //TODO change colors here
-                  colors={["#00BFFF", "#7FFF00", "#FFD700"]}
-                >
-                  Feb 20 to 22,
-                </GradientText>
-              </span> */}
               <div className="block md:inline bg-purple-600 bg-opacity-60 text-white text-3xl md:text-4xl py-1 px-3 rounded-full hover:scale-105 ease-in-out duration-300 backdrop-blur-md ">
                 20<sup>th</sup> to 22<sup>nd</sup> Feb 2025
               </div>
@@ -71,9 +58,6 @@ const Hero = () => {
                 <FlipWords words={words2} />
               </span>
             </h1>
-            {/* <h2 className="text-md text-text-tertiary dark:text-dark-text-tertiary max-w-2xl text-pretty text-center md:text-lg text-white">
-              and unforgettable moments are made.
-            </h2> */}
           </div>
         </div>
         <div className="dark:divide-dark-border flex items-start justify-center divide-y divide-black/10 px-8 sm:px-24">
@@ -81,9 +65,6 @@ const Hero = () => {
             <a href="/docs" className="cursor-pointer w-full"></a>
           </div>
         </div>
-        {/* <div className="mx-auto max-w-7xl">
-          <AnimatedLogoCloud />
-        </div> */}
       </div>
     </section>
   );
@@ -91,75 +72,4 @@ const Hero = () => {
 
 export default Hero;
 
-const logos = [
-  {
-    name: "Vercel",
-    url: "https://res.cloudinary.com/dfhp33ufc/image/upload/v1715881430/vercel_wordmark_dark_mhv8u8.svg",
-  },
-  {
-    name: "Nextjs",
-    url: "https://res.cloudinary.com/dfhp33ufc/image/upload/v1715881475/nextjs_logo_dark_gfkf8m.svg",
-  },
-  {
-    name: "Prime",
-    url: "https://res.cloudinary.com/dfhp33ufc/image/upload/v1715276558/logos/t2awrrfzdvmg1chnzyfr.svg",
-  },
-  {
-    name: "Trustpilot",
-    url: "https://res.cloudinary.com/dfhp33ufc/image/upload/v1715276558/logos/tkfspxqmjflfllbuqxsi.svg",
-  },
-  {
-    name: "Webflow",
-    url: "https://res.cloudinary.com/dfhp33ufc/image/upload/v1715276560/logos/nymiivu48d5lywhf9rpf.svg",
-  },
-  {
-    name: "Airbnb",
-    url: "https://res.cloudinary.com/dfhp33ufc/image/upload/v1715276558/logos/pmblusboe7vkw8vxdknx.svg",
-  },
-  {
-    name: "Tina",
-    url: "https://res.cloudinary.com/dfhp33ufc/image/upload/v1715276560/logos/afqhiygywyphuou6xtxc.svg",
-  },
-  {
-    name: "Stackoverflow",
-    url: "https://res.cloudinary.com/dfhp33ufc/image/upload/v1715276558/logos/ts1j4mkooxqmscgptafa.svg",
-  },
-  {
-    name: "mistral",
-    url: "https://res.cloudinary.com/dfhp33ufc/image/upload/v1715276558/logos/tyos2ayezryjskox3wzs.svg",
-  },
-];
 
-const AnimatedLogoCloud = () => {
-  return (
-    <div className="w-full py-12">
-      <div className="mx-auto w-full px-4 md:px-8">
-        <div
-          className="group relative mt-6 flex gap-6 overflow-hidden p-2"
-          style={{
-            maskImage:
-              "linear-gradient(to left, transparent 0%, black 20%, black 80%, transparent 95%)",
-          }}
-        >
-          {Array(5)
-            .fill(null)
-            .map((_, index) => (
-              <div
-                key={index}
-                className="flex shrink-0 animate-x-slider flex-row justify-around gap-6"
-              >
-                {logos.map((logo, key) => (
-                  <img
-                    key={key}
-                    src={logo.url}
-                    className="h-10 w-28 px-2 flex-none brightness-0 dark:invert"
-                    alt={logo.name}
-                  />
-                ))}
-              </div>
-            ))}
-        </div>
-      </div>
-    </div>
-  );
-};
