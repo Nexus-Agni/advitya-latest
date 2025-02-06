@@ -32,7 +32,7 @@ function Footer() {
         {/* Logo and Social Icons */}
         <div className="flex flex-col items-center">
           <img
-            src="https://cloud.appwrite.io/v1/storage/buckets/67a1d7b300237ca90544/files/67a1dad60007c6ebfbb7/view?project=6756a8dc000c0d24754b&mode=admin"
+            src="https://cloud.appwrite.io/v1/storage/buckets/679e48ae0017ce0d8b62/files/679f78f4002bfaa63b4d/view?project=6756a8dc000c0d24754b&mode=admin"
             alt="Advitya Logo"
             className="h-40 md:h-60 "
           />
