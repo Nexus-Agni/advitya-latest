@@ -4,16 +4,17 @@ import Hero from "../components/Hero";
 import { Leadership } from "../components/Leadership";
 import { AdvityaDescription } from "../components/AdVITyaDescription";
 import { Navbar } from "../components/Navbar";
-//import Highlights from "../components/Highlights";
 import Preloader from "../components/ui/apple-preloader";
 import Footer from "../components/Footer";
 import ContactUsSection from "../components/ContactUsSection";
 import { Video } from "../components/Video";
 import { KeyHighlights } from "../components/KeyHighLights";
 import { Sponsors } from "../components/sponcers";
+import Popup from "../components/Popup";
 
 function Home() {
   const [loading, setLoading] = useState(true);
+  const [showPopup, setShowPopup] = useState(true); // Add state for popup visibility
   const location = useLocation();
 
   useEffect(() => {
@@ -61,6 +62,7 @@ function Home() {
       <Leadership />
       <ContactUsSection />
       <Footer />
+      <Popup show={showPopup} onClose={() => setShowPopup(false)} />
     </div>
   );
 }

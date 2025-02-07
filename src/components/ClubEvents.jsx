@@ -7,6 +7,16 @@ export function ClubEvents() {
 
   const cards = [
     {
+      title: "Pro Night",
+      src: "https://cloud.appwrite.io/v1/storage/buckets/67a1d7b300237ca90544/files/67a1dbab0027d654181a/view?project=6756a8dc000c0d24754b&mode=admin",
+      link: "/pro-night",
+    },
+    {
+      title: "Celebrity Night",
+      src: "https://cloud.appwrite.io/v1/storage/buckets/67a1d7b300237ca90544/files/67a48344002001187e96/view?project=6756a8dc000c0d24754b&mode=admin",
+      link: "/celebrity-night",
+    },
+    {
       title: "Technical Events",
       src: "https://cloud.appwrite.io/v1/storage/buckets/67a1d7b300237ca90544/files/67a1db88001255381c7a/view?project=6756a8dc000c0d24754b&mode=admin",
       link: "/technical-events",
@@ -20,11 +30,6 @@ export function ClubEvents() {
       title: "Virtual Events",
       src: "https://cloud.appwrite.io/v1/storage/buckets/67a1d7b300237ca90544/files/67a3389d0014da31ae2e/view?project=6756a8dc000c0d24754b&mode=admin",
       link: "/virtual-events",
-    },
-    {
-      title: "Pro Night",
-      src: "https://cloud.appwrite.io/v1/storage/buckets/67a1d7b300237ca90544/files/67a1dbab0027d654181a/view?project=6756a8dc000c0d24754b&mode=admin",
-      link: "/pro-night",
     },
     {
       title: "MP Gaurav",
@@ -69,7 +74,7 @@ export function ClubEvents() {
         </div>
 
         {/* Cards Container */}
-        <div className="flex flex-wrap items-center justify-center gap-5 px-8 mx-auto max-w-[95%]">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-5 px-8 mx-auto max-w-[95%]">
           {cards.map((card, index) => (
             <CardContainer key={index} className="inter-var">
               <CardBody className="bg-gray-50 relative group/card dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-[20rem] h-auto rounded-xl p-6 border-4 hover:border-purple-600 transition-all ease-in-out duration-300">
