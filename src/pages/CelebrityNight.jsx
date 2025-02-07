@@ -14,31 +14,31 @@ import { Audio } from "react-loader-spinner";
 import { useNavigate } from "react-router-dom";
 import GradientText from "../components/ui/GradientText";
 
-const dummySongs = [
+const songs = [
   {
-    title: "Shugal Laga Le",
+    title: "Crazy Kiya Re",
     albumImage:
-      "https://cloud.appwrite.io/v1/storage/buckets/67a1d7b300237ca90544/files/67a4858d0000b1f9b75c/view?project=6756a8dc000c0d24754b&mode=admin",
+      "https://cloud.appwrite.io/v1/storage/buckets/67a1d7b300237ca90544/files/67a5bd44000298316965/view?project=6756a8dc000c0d24754b&mode=admin",
     audioSrc:
-      "https://cloud.appwrite.io/v1/storage/buckets/67a481a700068f90490a/files/67a481f1003401f95cf3/view?project=6756a8dc000c0d24754b&mode=admin",
+      "https://cloud.appwrite.io/v1/storage/buckets/67a481a700068f90490a/files/67a5cd2a0015f8108dec/view?project=6756a8dc000c0d24754b&mode=admin",
   },
   {
-    title: "Train Song",
+    title: "Girls Like to Swing",
     albumImage:
-      "https://cloud.appwrite.io/v1/storage/buckets/67a1d7b300237ca90544/files/67a4bb8d0026c5e1f03c/view?project=6756a8dc000c0d24754b&mode=admin",
+      "https://cloud.appwrite.io/v1/storage/buckets/67a1d7b300237ca90544/files/67a5bd4a0035b2fed1dc/view?project=6756a8dc000c0d24754b&mode=admin",
     audioSrc:
-      "https://cloud.appwrite.io/v1/storage/buckets/67a481a700068f90490a/files/67a5924c002975366b2c/view?project=6756a8dc000c0d24754b&mode=admin",
+      "https://cloud.appwrite.io/v1/storage/buckets/67a481a700068f90490a/files/67a5c5e0003484966abd/view?project=6756a8dc000c0d24754b&mode=admin",
   },
   {
-    title: "Darmiyan",
+    title: "Kaisi Paheli Zindagani",
     albumImage:
-      "https://cloud.appwrite.io/v1/storage/buckets/67a1d7b300237ca90544/files/67a48579000acee77ec6/view?project=6756a8dc000c0d24754b&mode=admin",
+      "https://cloud.appwrite.io/v1/storage/buckets/67a1d7b300237ca90544/files/67a5bd5200288ededa51/view?project=6756a8dc000c0d24754b&mode=admin",
     audioSrc:
-      "https://cloud.appwrite.io/v1/storage/buckets/67a481a700068f90490a/files/67a4866a00024aa4c010/view?project=6756a8dc000c0d24754b&mode=admin",
+      "https://cloud.appwrite.io/v1/storage/buckets/67a481a700068f90490a/files/67a5bdbc0014ecd7784b/view?project=6756a8dc000c0d24754b&mode=admin",
   },
 ];
 
-export default function ProNight() {
+export default function CelebrityNight() {
   const navigate = useNavigate();
   const [isPlaying, setIsPlaying] = useState(true);
   const [currentSongIndex, setCurrentSongIndex] = useState(0);
@@ -56,12 +56,12 @@ export default function ProNight() {
   }, [currentSongIndex, isPlaying]);
 
   const nextSong = () => {
-    setCurrentSongIndex((prevIndex) => (prevIndex + 1) % dummySongs.length);
+    setCurrentSongIndex((prevIndex) => (prevIndex + 1) % songs.length);
   };
 
   const previousSong = () => {
     setCurrentSongIndex((prevIndex) =>
-      prevIndex === 0 ? dummySongs.length - 1 : prevIndex - 1
+      prevIndex === 0 ? songs.length - 1 : prevIndex - 1
     );
   };
 
@@ -107,44 +107,46 @@ export default function ProNight() {
         <div className="w-full max-w-[1400px] mx-auto px-4 md:px-6">
           <div className="flex flex-col items-center text-center mb-16">
             <img
-              src="https://cloud.appwrite.io/v1/storage/buckets/67a1d7b300237ca90544/files/67a466f60007f4bcd223/view?project=6756a8dc000c0d24754b&mode=admin"
+              src="https://cloud.appwrite.io/v1/storage/buckets/67a1d7b300237ca90544/files/67a5b7a0001971fd1f93/view?project=6756a8dc000c0d24754b&mode=admin"
               alt="Raghu Dixit"
               className="w-full max-w-[500px]  rounded-xl mb-8"
             />
-            <h1 className="text-white text-4xl font-bold mb-4">Raghu Dixit</h1>
+            <h1 className="text-white text-4xl font-bold mb-4">
+              Sunidhi Chauhan
+            </h1>
             <p className="text-white text-md max-w-2xl">
-              Raghu Dixit, often regarded as the pioneer of independent music in
-              India, has been captivating audiences worldwide for over two
-              decades with his unique blend of traditional and contemporary
-              sounds. His band, The Raghu Dixit Project, has performed over 2000
-              concerts across 5 continents, creating an unforgettable experience
-              that inspires a generation of artists to sing proudly in
-              vernacular languages.
+              Sunidhi Chauhan, one of India&apos;s most versatile and celebrated
+              playback singers, has been enchanting audiences with her powerful
+              voice and dynamic performances for over two decades. With numerous
+              chart-topping hits and awards to her name, Sunidhi has become a
+              household name in the Indian music industry. Her ability to
+              effortlessly switch between genres and her captivating stage
+              presence have made her a favorite among music lovers worldwide.
             </p>
             <div className="flex space-x-4 mt-4">
               <a
-                href="https://www.instagram.com/theraghudixitproject/"
+                href="https://www.instagram.com/sunidhichauhan5/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <Instagram className="w-6 h-6 text-white hover:text-purple-600 transition-colors" />
               </a>
               <a
-                href="https://www.facebook.com/trdp/"
+                href="https://www.facebook.com/sunidhi.chauhan/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <Facebook className="w-6 h-6 text-white hover:text-purple-600 transition-colors" />
               </a>
               <a
-                href="https://x.com/Raghu_Dixit"
+                href="https://x.com/sunidhichauhan5"
                 target="_blank"
                 rel="noopener noreferrer"
               >
                 <Twitter className="w-6 h-6 text-white hover:text-purple-600 transition-colors" />
               </a>
               <a
-                href="https://www.youtube.com/raghudixitmusic"
+                href="https://www.youtube.com/channel/UCOy7uPsjass2DCY4a_UUp-Q"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -177,10 +179,9 @@ export default function ProNight() {
                   <div className="absolute left-1/2 top-1/2 h-2/3 w-2/3 -translate-x-1/2 -translate-y-1/2 transform rounded-full border border-zinc-800 overflow-hidden">
                     <img
                       src={
-                        dummySongs[currentSongIndex].albumImage ||
-                        "/placeholder.svg"
+                        songs[currentSongIndex].albumImage || "/placeholder.svg"
                       }
-                      alt={dummySongs[currentSongIndex].title}
+                      alt={songs[currentSongIndex].title}
                       className="rounded-full object-cover"
                       sizes="(max-width: 640px) 80vw, (max-width: 1024px) 50vw, 600px"
                     />
@@ -233,7 +234,7 @@ export default function ProNight() {
                     POPULAR SONGS
                   </GradientText>
                   <ul className="text-white text-lg space-y-2">
-                    {dummySongs.map((song, index) => (
+                    {songs.map((song, index) => (
                       <li
                         key={index}
                         className={`flex items-center p-2 rounded-lg ${
@@ -284,7 +285,7 @@ export default function ProNight() {
       </section>
       <audio
         ref={audioRef}
-        src={dummySongs[currentSongIndex].audioSrc}
+        src={songs[currentSongIndex].audioSrc}
         onEnded={nextSong}
       />
     </div>

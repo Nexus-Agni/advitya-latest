@@ -12,6 +12,7 @@ import TeamMembersPage from "./pages/team-members-page";
 import ProNight from "./pages/ProNight";
 import MpPride from "./pages/mppride";
 import ApplePreloader from "./components/ui/apple-preloader";
+import CelebrityNight from "./pages/CelebrityNight";
 
 function App() {
   const [imagesLoaded, setImagesLoaded] = useState(false);
@@ -64,6 +65,7 @@ function App() {
         <Route path="/virtual-events" element={<VirtualEvents />} />
         <Route path="/team" element={<TeamMembersPage />} />
         <Route path="/pro-night" element={<ProNight />} />
+        <Route path="/celebrity-night" element={<CelebrityNight />} />
         <Route path="/mp-pride" element={<MpPride />} />
       </Routes>
       <ToastContainer
