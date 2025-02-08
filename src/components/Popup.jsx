@@ -25,7 +25,7 @@ const Popup = ({ show, onClose }) => {
         >
           <div className="inter-var">
             <div
-              className="bg-gray-50 relative dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] w-[35rem] h-auto rounded-xl p-6 border-4 hover:border-purple-600 transition-all ease-in-out duration-300"
+              className="bg-gray-50 relative dark:hover:shadow-2xl dark:hover:shadow-emerald-500/[0.1] dark:bg-black dark:border-white/[0.2] border-black/[0.1] sm:w-[35rem] h-auto rounded-xl p-6 border-4 hover:border-purple-600 transition-all ease-in-out duration-300"
               onClick={handleViewMore}
             >
               <button onClick={handleCloseClick} className="absolute top-2 right-2 z-10">
