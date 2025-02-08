@@ -107,7 +107,7 @@ export default function CelebrityNight() {
         <div className="w-full max-w-[1400px] mx-auto px-4 md:px-6">
           <div className="flex flex-col items-center text-center mb-16">
             <img
-              src="https://cloud.appwrite.io/v1/storage/buckets/67a1d7b300237ca90544/files/67a5b7a0001971fd1f93/view?project=6756a8dc000c0d24754b&mode=admin"
+              src="https://cloud.appwrite.io/v1/storage/buckets/67a1d7b300237ca90544/files/67a6e9a600250b66e066/view?project=6756a8dc000c0d24754b&mode=admin"
               alt="Raghu Dixit"
               className="w-full max-w-[500px]  rounded-xl mb-8"
             />

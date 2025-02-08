@@ -13,7 +13,6 @@ export function KeyHighlights() {
     const fetchHighlights = async () => {
       try {
         const data = await dbService.getKeyHighlights();
-        console.log(data);
         const formattedData = data.map((item) => ({
           category: item.Information,
           title: item.Title,
@@ -28,10 +27,6 @@ export function KeyHighlights() {
     fetchHighlights();
   }, []);
 
-  const handleTogglePause = () => {
-    setIsPaused((prevState) => !prevState);
-  };
-
   return (
     <div className="w-full h-full md:py-30">
       <GradientText>
@@ -39,8 +34,6 @@ export function KeyHighlights() {
       </GradientText>
       <div
         className="event-cards flex"
-        //onMouseEnter={handleTogglePause}
-        //onMouseLeave={handleTogglePause}
       >
         <Marquee
           className={`flex gap-6 event-cards marquee ${
