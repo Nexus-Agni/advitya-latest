@@ -9,7 +9,7 @@ import Footer from "../components/Footer";
 import ContactUsSection from "../components/ContactUsSection";
 import { Video } from "../components/Video";
 import { KeyHighlights } from "../components/KeyHighLights";
-import { Sponsors } from "../components/sponcers";
+import { Sponsors } from "../components/Sponsors";
 import Popup from "../components/Popup";
 
 function Home() {
