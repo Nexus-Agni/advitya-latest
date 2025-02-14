@@ -1,46 +1,56 @@
-const logos = [
+import GradientText from "../components/ui/GradientText";
+import Marquee from "react-fast-marquee";
+
+export function Sponsors() {
+  const sponsors = [
     {
-      name: "Vercel",
-      url: "https://res.cloudinary.com/dfhp33ufc/image/upload/v1715881430/vercel_wordmark_dark_mhv8u8.svg",
+      id: 1,
+      logo: "https://cloud.appwrite.io/v1/storage/buckets/67a1d7b300237ca90544/files/67a46539001a51355604/view?project=6756a8dc000c0d24754b&mode=admin",
     },
     {
-      name: "Nextjs",
-      url: "https://res.cloudinary.com/dfhp33ufc/image/upload/v1715881475/nextjs_logo_dark_gfkf8m.svg",
+      id: 2,
+      logo: "https://cloud.appwrite.io/v1/storage/buckets/67a1d7b300237ca90544/files/67a46527002efeb323b2/view?project=6756a8dc000c0d24754b&mode=admin",
+    },
+    {
+      id: 3,
+      logo: "https://cloud.appwrite.io/v1/storage/buckets/67a1d7b300237ca90544/files/67aed88e0014c9661621/view?project=6756a8dc000c0d24754b&mode=admin",
+    },
+    {
+      id: 4,
+      logo: "https://cloud.appwrite.io/v1/storage/buckets/67a1d7b300237ca90544/files/67aef8530004a2ffde82/view?project=6756a8dc000c0d24754b&mode=admin",
+    },
+    {
+      id: 5,
+      logo: "https://cloud.appwrite.io/v1/storage/buckets/67a1d7b300237ca90544/files/67aef88a00250f76d44f/view?project=6756a8dc000c0d24754b&mode=admin",
     },
   ];
 
-
-export default function Sponsors() {
   return (
-    <div className="mx-auto max-w-7xl">
-      <div className="w-full py-12">
-        <div className="mx-auto w-full px-4 md:px-8">
-          <div
-            className="group relative mt-6 flex gap-6 overflow-hidden p-2"
-            style={{
-              maskImage:
-                "linear-gradient(to left, transparent 0%, black 20%, black 80%, transparent 95%)",
-            }}
-          >
-            {Array(5)
-              .fill(null)
-              .map((_, index) => (
-                <div
-                  key={index}
-                  className="flex shrink-0 animate-x-slider flex-row justify-around gap-6"
-                >
-                  {logos.map((logo, key) => (
-                    <img
-                      key={key}
-                      src={logo.url}
-                      className="h-10 w-28 px-2 flex-none brightness-0 dark:invert"
-                      alt={logo.name}
-                    />
-                  ))}
-                </div>
-              ))}
-          </div>
+    <div className="sponsors-container overflow-hidden w-full py-4">
+      <div className="pt-6">
+        <div className="pt-6">
+          <GradientText className="text-left pl-4 text-6xl font-bold uppercase">
+            Our Sponsors
+          </GradientText>
         </div>
+      </div>
+      <div className="w-full mt-6">
+        <Marquee
+          gradient={false}
+          speed={80}
+          className="flex gap-0"
+          direction="left"
+        >
+          {sponsors.concat(sponsors).map((sponsor, index) => (
+            <div key={index} className="flex-none w-3/4 md:w-2/3 px-0.5">
+              <img
+                src={sponsor.logo}
+                alt="Sponsor logo"
+                className="w-full h-48 object-contain"
+              />
+            </div>
+          ))}
+        </Marquee>
       </div>
     </div>
   );
