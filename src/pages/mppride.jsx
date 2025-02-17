@@ -20,11 +20,6 @@ export default function Mppride() {
       src: "https://cloud.appwrite.io/v1/storage/buckets/67a0557c003c575360a3/files/67a05a53003cb926bbd2/view?project=6756a8dc000c0d24754b&mode=admin",
     },
     {
-      name: "Dr. Purushottam Dadheech",
-      designation: "Padma Shri (Dance)",
-      src: "https://cloud.appwrite.io/v1/storage/buckets/67a0557c003c575360a3/files/67a05a2d000d4884385d/view?project=6756a8dc000c0d24754b&mode=admin",
-    },
-    {
       name: "Mr. Satendra Lohiya",
       designation: "Padma Shri (Sports)",
       src: "https://cloud.appwrite.io/v1/storage/buckets/67a0557c003c575360a3/files/67a05a0300054efd5136/view?project=6756a8dc000c0d24754b&mode=admin",
